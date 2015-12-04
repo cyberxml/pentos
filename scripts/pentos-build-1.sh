@@ -9,4 +9,7 @@ yum -y install git
 
 # add the PentOS build repository
 cd /opt
-git 
+git clone https://github.com/cyberxml/pentos
+cd /opt/pentos/scripts
+
+
