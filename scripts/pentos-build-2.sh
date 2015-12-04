@@ -1,3 +1,4 @@
+echo y | yum -y upgrade
 
 yum -y install mailx
 yum -y install mutt
@@ -10,7 +11,7 @@ yum -y install openssh-clients
 yum -y install openssh-clients
 yum -y install ftp
 yum -y install telnet
-yum -y install samba-clients
+yum -y install samba-client
 yum -y install tcpdump
 yum -y install nmap
 yum -y install freedts
