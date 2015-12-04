@@ -55,7 +55,7 @@ yum -y install python-simplejson
 yum -y install python-simpleparse
 yum -y install python-tornado
 yum -y install pytz
-yum -y install pywbem ?
+yum -y install pywbem
 yum -y install scipy
 yum -y install python-matplotlib
 yum -y install tkinter
