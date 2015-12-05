@@ -30,3 +30,11 @@ wget http://updates.atomicorp.com/channels/atomic-testing/centos/6/x86_64/RPMS/o
 rpm -ivh --force openvas-libraries-8.0.5-21.el6.art.x86_64.rpm
 openvas-setup
 
+openvasmd --rebuild
+openvasmd
+openvasmd --create-user admin
+openvasmd --user=admin --new-password=admin2wsx
+echo default admin password set to 'admin2wsx'
+echo it would be a good idea to change this
+echo 'openvasmd --user=admin --new-password=something'
+
