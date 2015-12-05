@@ -35,13 +35,15 @@ rpm -ivh --force openvas-libraries-8.0.5-21.el6.art.x86_64.rpm
 
 openvas-setup
 
+echo rebuilding openvasd
+echo this will take several minutes
 openvasmd --rebuild
 openvasmd --create-user admin
 openvasmd --user=admin --new-password=admin2wsx
 openvasmd
-#echo default admin password set to 'admin2wsx'
-#echo it would be a good idea to change this
-#echo 'openvasmd --user=admin --new-password=something'
+echo default admin password set to 'admin2wsx'
+echo it would be a good idea to change this later
+echo 'openvasmd --user=admin --new-password=something'
 
 #openvas-scapdata-sync
 #openvas-certdata-sync
@@ -49,4 +51,9 @@ openvasmd
 
 #service gsad start
 
-firefox -u https://127.0.0.1:9392
+echo to test the installation
+echo open firefox to the url http://127.0.0.1:9392
+echo and login with admin and admin2wsx
+#echo please accept the security risk and log into OpenVas
+#firefox --url https://127.0.0.1:9392 
+
