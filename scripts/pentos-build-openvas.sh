@@ -1,7 +1,5 @@
-yum -y install texlive
 yum -y install net-tools
 yum -y install alien 
-
 
 cd /opt
 
@@ -10,16 +8,16 @@ rpm -i heimdal-libs-1.6.0-0.9.20140621gita5adc06.el6.x86_64.rpm
 
 wget ftp://ftp.pbone.net/mirror/download.fedora.redhat.com/pub/fedora/epel/6/x86_64/hiredis-0.10.1-3.el6.x86_64.rpm
 rpm -i hiredis-0.10.1-3.el6.x86_64.rpm
-/sbin/chkconfig --level 5 redis on
-/sbin/chkconfig --level 4 redis on
-/sbin/chkconfig --level 3 redis on
-/sbin/chkconfig --level 2 redis on
 
 wget -q -O - http://www.atomicorp.com/installers/atomic |sh
 
 yum -y --enablerepo=atomic-testing install redis
 echo unixsocket /tmp/redis.sock >> /etc/redis.conf
 echo unixsocketperm 700  >> /etc/redis.conf
+/sbin/chkconfig --level 5 redis on
+/sbin/chkconfig --level 4 redis on
+/sbin/chkconfig --level 3 redis on
+/sbin/chkconfig --level 2 redis on
 service redis start
 
 yum -y --enablerepo=atomic-testing install openvas-smb
@@ -37,10 +35,10 @@ rpm -ivh --force openvas-libraries-8.0.5-21.el6.art.x86_64.rpm
 
 openvas-setup
 
-#openvasmd --rebuild
-#openvasmd
-#openvasmd --create-user admin
-#openvasmd --user=admin --new-password=admin2wsx
+openvasmd --rebuild
+openvasmd --create-user admin
+openvasmd --user=admin --new-password=admin2wsx
+openvasmd
 #echo default admin password set to 'admin2wsx'
 #echo it would be a good idea to change this
 #echo 'openvasmd --user=admin --new-password=something'
@@ -51,3 +49,4 @@ openvas-setup
 
 #service gsad start
 
+firefox -u https://127.0.0.1:9392
