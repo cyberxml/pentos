@@ -1,12 +1,12 @@
 # PentOS
 
-## CentOS with a collection of Penetration Tools
+#### CentOS with a collection of Penetration Tools
 
-### -------------------------------------------------------------
-### Start Virtual Box Setup
-### -------------------------------------------------------------
-### if installing in a VM, execute this section
-### if installing to the host, skip to next section
+###### -------------------------------------------------------------
+###### Start Virtual Box Setup
+###### -------------------------------------------------------------
+###### if installing in a VM, execute this section
+###### if installing to the host, skip to next section
 In the "Oracle VM VirtualBox Manager" window,
 	select: New
 In "Create Virtual Machine" window, 
@@ -45,13 +45,13 @@ In the file browser, select: CentOS-6.5-x86_64-bin-DVD1
 	select the "Open" button
 In the "Select start-up disk" dialog,
 	select the "Start" button
-### -------------------------------------------------------------
-### End Virtual Box Setup
-### -------------------------------------------------------------
+###### -------------------------------------------------------------
+###### End Virtual Box Setup
+###### -------------------------------------------------------------
 
-### -------------------------------------------------------------
-### Start CentOS 6 Install
-### -------------------------------------------------------------
+###### -------------------------------------------------------------
+###### Start CentOS 6 Install
+###### -------------------------------------------------------------
 In the "Welcome" dialog, select: Install or upgrade an existing system
 In the "Disk" dialog, select: Skip
 If the "Unsupported Hardware Dialog" dialog appears, select: OK
@@ -100,13 +100,13 @@ On the "The default installation of CentOS is minimal install" page,
 On the "Congratulations, your CentOS install is complete" page,
 	select: Reboot
 
-### -------------------------------------------------------------
-### End CentOS 6 Install
-### -------------------------------------------------------------
+###### -------------------------------------------------------------
+###### End CentOS 6 Install
+###### -------------------------------------------------------------
 
-### -------------------------------------------------------------
-### Start CentOS 6 Initial Configuration
-### -------------------------------------------------------------
+###### -------------------------------------------------------------
+###### Start CentOS 6 Initial Configuration
+###### -------------------------------------------------------------
 On the "Welcome" page,
 	select: Forward
 
@@ -134,7 +134,7 @@ In the "Changing Kdump" dialog,
 In the "The system must now reboot..." dialog,
 	select: OK
 
-### -------------------------------------------------------------
-### End CentOS 6 Initial Configuration
-### -------------------------------------------------------------
+###### -------------------------------------------------------------
+###### End CentOS 6 Initial Configuration
+###### -------------------------------------------------------------
 
