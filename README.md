@@ -63,11 +63,17 @@ In the "Select start-up disk" dialog,
 ###### -------------------------------------------------------------
 ###### Start CentOS 6 Install
 ###### -------------------------------------------------------------
-In the "Welcome" dialog, select: Install or upgrade an existing system
-In the "Disk" dialog, select: Skip
-If the "Unsupported Hardware Dialog" dialog appears, select: OK
+In the "Welcome" dialog, select:
+ - 	Install or upgrade an existing system
 
-On the "CentOS 6" splash page, select: Next
+In the "Disk" dialog,
+ - 	select: Skip
+
+If the "Unsupported Hardware Dialog" dialog appears,
+ - 	select: OK
+
+On the "CentOS 6" splash page,
+ - 	select: Next
 
 On the "What language would you like to use during the installation process?" page, 
  - 	select: English
