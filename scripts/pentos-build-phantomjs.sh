@@ -1,5 +1,7 @@
 echo This script may take over an hour to run
 echo Phantomjs is a requirement for headless httpscreenshot
+echo due to the larget size of the build directory,
+echo ... it will be deleted after the buil
 
 yum -y install gcc gcc-c++ make flex bison gperf ruby \
   openssl-devel freetype-devel fontconfig-devel libicu-devel sqlite-devel \
@@ -18,4 +20,6 @@ cp /opt/phantomjs/bin/phantomjs /usr/local/bin
 # yum -y install rpm-build
 # cd /opt/phantomjs/rpm
 # ./mkrpm.sh phantom.js /opt/phantomjs/rpm
+
+rm -rf /opt/phantomjs
 

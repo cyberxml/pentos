@@ -1,4 +1,5 @@
 
+echo This build could take longer than an hour
 cd /t clone https://github.com/Veil-Framework/Veil-Evasion.git
 cd /opt/Veil-Evasion/setup
 runuser="$(whoami)"
