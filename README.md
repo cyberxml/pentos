@@ -8,7 +8,7 @@
 ###### if installing in a VM, execute this section
 ###### if installing to the host, skip to next section
 In the "Oracle VM VirtualBox Manager" window,
-	select: New
+[ ]	select: New
 In "Create Virtual Machine" window, 
 	in the "Name" field, enter: PentOS YYYYMMDD
 	in the "Type" list, select: Linux
