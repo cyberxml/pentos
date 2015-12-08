@@ -35,13 +35,12 @@ In the "PentOS YYYYMMDD - Settings" windows,
 
 In the "PentOS YYYYMMDD - Settings" windows,
  - 	from the left hand panel, select: Shared Folders
- - 	from the right hand panel, right click on "Machine folders" and select
+ - 	from the right hand panel, right click on "Machine folders" and select "Add Shared Folder"
 
 In the "Add Share" dialog,
  - 	Select a Folder Path ("\Users\myuser\Downloads")
  - 	Select a Folder Name: host
  - 	Select: Automount
- - 	Select: Make Permanent
  - 	Select: OK
 
 In the "Oracle VM VirtualBox Manager" window,
@@ -66,7 +65,7 @@ In the "Select start-up disk" dialog,
 In the "Welcome" dialog, select:
  - 	Install or upgrade an existing system
 
-In the "Disk" dialog,
+In the "Disk Found" dialog,
  - 	select: Skip
 
 If the "Unsupported Hardware Dialog" dialog appears,
@@ -105,10 +104,92 @@ On the "The root account is used for administering the system" page,
 
 On the "What type of installation would you like?" page,
  - 	select: "Use All Space"
+ - 	select: "Encrypt System"
+ - 	select: "Review and modify partioning layout"
  - 	select: Next
+
+###### STIG compliant disk partitioning
+###### disk encyrption to meet 'due care' for pentest info storage
+
+On the "Please Select A Device" page,
+ - 	select: LVM Volume Groups > vg_[hostname]
+ - 	select: Edit
+
+In the "Edit LVM Volume Group" dialog,
+ - 	select: lv_root
+ - 	select: Edit
+
+In the "Edit Logical Volume" dialog,
+ - 	in the Size field, enter: 23868
+ - 	select: Encrypt
+ - 	select: OK
+
+In the "Edit LVM Volume Group" dialog,
+ - 	select: lv_root
+ - 	select: Add
+
+In the "Make Logical Volume" dialog,
+ - 	in the mount point field, enter: /tmp
+ - 	in the size field, enter: 1024
+ - 	select: Encrypt
+ - 	select: OK
+
+In the "Edit LVM Volume Group" dialog,
+ - 	select: lv_root
+ - 	select: Add
+
+In the "Make Logical Volume" dialog,
+ - 	in the mount point field, enter: /var
+ - 	in the size field, enter: 1024
+ - 	select: Encrypt
+ - 	select: OK
+
+In the "Edit LVM Volume Group" dialog,
+ - 	select: lv_root
+ - 	select: Add
+
+In the "Make Logical Volume" dialog,
+ - 	in the mount point field, enter: /var/log
+ - 	in the size field, enter: 1024
+ - 	select: Encrypt
+ - 	select: OK
+
+In the "Edit LVM Volume Group" dialog,
+ - 	select: lv_root
+ - 	select: Add
+
+In the "Make Logical Volume" dialog,
+ - 	in the mount point field, enter: /var/log/audit
+ - 	in the size field, enter: 1024
+ - 	select: Encrypt
+ - 	select: OK
+
+In the "Edit LVM Volume Group" dialog,
+ - 	select: lv_root
+ - 	select: Add
+
+In the "Make Logical Volume" dialog,
+ - 	in the mount point field, enter: /home
+ - 	in the size field, enter: 1024
+ - 	select: Encrypt
+ - 	select: OK
+
+In the "Edit LVM Volume Group" dialog,
+ - 	select: OK
+
+In the "Format Warnings" dialog,
+ - 	select: Format
+
+In the "Enter passphrase for encrypted partion" dialog,
+ - 	in the "Enter passphrase" field, enter: a passphrase
+ - 	in the "Confirm passphrase" field, enter: a passphrase
+ - 	select: OK
 
 In the "Writing storage configuration to disk" dialog,
  - 	select: Write changes to disk
+
+On the "Boot Loader" page,
+ - 	select: Next
 
 On the "The default installation of CentOS is minimal install" page,
  - 	select: Desktop
