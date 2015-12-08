@@ -1,0 +1,2 @@
+chown root /etc/shadow
+

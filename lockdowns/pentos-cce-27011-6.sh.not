@@ -1,0 +1,4 @@
+# All USB support can be disabled by adding the nousb argument 
+# to the kernel's boot loader configuration. 
+# To do so, append "nousb" to the kernel line in /etc/grub.conf as shown:
+# kernel /vmlinuz-VERSION ro vga=ext root=/dev/VolGroup00/LogVol00 rhgb quiet nousb
