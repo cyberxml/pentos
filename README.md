@@ -245,12 +245,17 @@ In the "The system must now reboot..." dialog,
 # 'su' to root
 
 ifup eth0
+
 yum -y install git
+
 cd /opt
+
 git clone https://github.com/cyberxml/pentos
+
 cd /opt/pentos/build
 
 ./pentos-build-1.sh
+
 ./pentos-build-2.sh
 
 
