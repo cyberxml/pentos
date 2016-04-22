@@ -240,9 +240,11 @@ In the "The system must now reboot..." dialog,
 ###### Begin PentOS 6 Configuration
 ###### -------------------------------------------------------------
 
-# Login as penne
-# Open a terminal
-# 'su' to root
+Login as penne
+
+Open a terminal
+
+'su' to root
 
 ifup eth0
 
