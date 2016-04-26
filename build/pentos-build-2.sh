@@ -9,8 +9,6 @@ yum -y install wget
 yum -y install curl
 yum -y install bind-utils
 yum -y install openssh-clients
-yum -y install openssh-clients
-yum -y install openssh-clients
 yum -y install ftp
 yum -y install telnet
 yum -y install samba-client
@@ -65,3 +63,23 @@ yum -y install perl-LDAP
 
 yum -y install ruby
 yum -y install rubygems
+
+
+# --------- build tools ----------
+yum -y install gcc
+yum -y install openssl
+yum -y install openssl-devel
+yum -y install libcurl-devel
+yum -y install libxml2-devel
+yum -y install libxslt-devel
+yum -y install pcre-devel
+yum -y install bzip2-devel
+yum -y install libtool
+yum -y install swig
+
+# install pip
+cd /opt
+wget http://peak.telecommunity.com/dist/ez_setup.py
+python ez_setup.py
+easy_install pip
+

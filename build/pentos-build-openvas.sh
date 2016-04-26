@@ -30,10 +30,13 @@ yum -y --enablerepo=atomic install openvas-manager
 yum -y --enablerepo=atomic install openvas
 #yum -y --enablerepo=atomic install greenbone-security-assistant
 
-wget http://updates.atomicorp.com/channels/atomic-testing/centos/6/x86_64/RPMS/openvas-libraries-8.0.5-21.el6.art.x86_64.rpm
-rpm -ivh --force openvas-libraries-8.0.5-21.el6.art.x86_64.rpm
+#wget http://updates.atomicorp.com/channels/atomic-testing/centos/6/x86_64/RPMS/openvas-libraries-8.0.5-21.el6.art.x86_64.rpm
+#rpm -ivh --force openvas-libraries-8.0.5-21.el6.art.x86_64.rpm
 
 openvas-setup
+# fails on sync
+# this works: openvas-nvt-sync --wget
+# this works: openvas-certdata-sync --wget
 
 echo rebuilding openvasd
 echo this will take several minutes

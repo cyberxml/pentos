@@ -12,6 +12,9 @@ cd /opt
 git clone https://github.com/ariya/phantomjs.git
 
 cd /opt/phantomjs
+# build script includes remote option for git which breaks in CentOS 6
+mv build.py build-remote.py
+sed 's/"--remote"//' build-remote.py > build.py
 ./build.py
 
 cp /opt/phantomjs/bin/phantomjs /usr/local/bin

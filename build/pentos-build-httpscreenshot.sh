@@ -1,14 +1,7 @@
-
-# required pentos components
-# phantomjs
-# PIL
-# M2Crypto
-
-# install pip
-cd /opt
-wget http://peak.telecommunity.com/dist/ez_setup.py
-python ez_setup.py
-easy_install pip
+# require pip
+# require phantomjs
+# require PIL
+# require M2Crypto
 
 #pip install m2crypto
 pip install requests

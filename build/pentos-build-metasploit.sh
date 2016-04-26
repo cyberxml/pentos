@@ -1,6 +1,7 @@
 # Latest Metasploitable-Framework
 
 cd /opt
+rm -f metasploit-framework*rpm
 
 base=`wget -qO- http://rpm.metasploit.com/ | grep metasploit-framework | tail -1 | cut -d'"' -f2`
 
@@ -10,4 +11,4 @@ rpmurl=https://rpm.metasploit.com/${base}
 
 wget --no-check-certificate ${rpmurl}
 
-rpm -ivh ${rpm}
+rpm -ivh metasploit-framework*rpm
