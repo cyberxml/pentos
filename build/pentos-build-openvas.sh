@@ -1,3 +1,12 @@
+# needs rsync port open
+# failed without --wget option
+# required:    openvas-mkcert-client -n -i  
+# see https://fedoraproject.org/wiki/QA:Testcase_OpenVAS
+#[root@localhost build]# openvasmd --create-user=admin
+#User created with password 'c22c1142-01ef-4d46-adb5-31d052d52f07'.
+#[root@localhost build]# openvasmd --create-user admin
+#[root@localhost build]# openvasmd --user=admin --new-password=admin2wsx
+
 yum -y install net-tools
 yum -y install alien 
 
