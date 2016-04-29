@@ -64,6 +64,7 @@ yum -y install perl-LDAP
 yum -y install ruby
 yum -y install rubygems
 
+yum -y install aide
 
 # --------- build tools ----------
 yum -y install gcc
