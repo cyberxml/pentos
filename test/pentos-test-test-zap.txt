@@ -1,0 +1,8 @@
+
+# launch the gui
+zap.sh
+
+# In the right hand panel, in the "URL to attach" field, enter: http://192.168.0.60
+# Select the [Attack] button
+
+# When scan is complete, select: File > Exit and delete session

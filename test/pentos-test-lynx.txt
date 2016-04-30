@@ -1,0 +1,9 @@
+
+# define as appropriate
+export tgtip=192.168.0.60
+
+lynx ${tgtip}
+
+# opens the splash page for metasploitable2
+# to quit, enter: q
+# to quit, enter: y

@@ -1,0 +1,22 @@
+
+# assumes tgtip=192.168.0.60
+
+# run the self-check
+openvas-check-setup
+
+# open firefox
+# navigate to http://127.0.0.1:9392
+
+# username: admin
+# password: admin2wsx
+
+# In the Quick start field, enter: 192.168.0.60
+# Select the [Start Scan] button
+
+# Under the "Name" column, select the "Immediate scan ..." link
+# In the "Results" row, select the "Last" link
+
+# Expect "O results"
+
+# Select "Logout" in the upper right hand corner
+ 

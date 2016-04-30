@@ -1,0 +1,11 @@
+
+
+# define as appropriate
+export tgtip=192.168.0.60
+
+# this is expected to fail
+# but demonstrates the executabe
+
+rpcclient -U msfadmin ${tgtip}
+
+#Cannot connect to server.  Error was NT_STATUS_ACCESS_DENIED

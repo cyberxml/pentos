@@ -1,0 +1,9 @@
+
+# define as appropriate
+export tgtip=192.168.0.60
+
+cd /tmp
+
+# this will dump a lot of data to stdout
+nikto -host ${tgtip}
+

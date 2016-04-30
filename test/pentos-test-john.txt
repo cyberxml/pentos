@@ -1,0 +1,16 @@
+
+# $1$XN10Zj2c$Rt/zzCW3mLtUWA.ihZjA5/
+
+# check the unshadow parser 
+# file is prepared as metasploitable.passwd
+/opt/john-1.8.0-jumbo-1/run/john /opt/pentos/test/metasploitable.passwd
+
+# msfadmin:msfadmin 
+
+# remove the cracked passwd
+rm -f /opt/john-1.8.0-jumbo-1/run/john.pot
+rm -f /opt/john-1.8.0-jumbo-1/run/john.log
+
+# let it chew on the raw hash
+# the following will take more than an hour
+# /opt/john-1.8.0-jumbo-1/run/john --incremental=Lower /opt/pentos/test/metasploitable.hash

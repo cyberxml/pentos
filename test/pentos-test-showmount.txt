@@ -1,0 +1,7 @@
+
+# define as appropriate
+export tgtip=192.168.0.60
+
+# showmount is a nfs client
+# which displays nfs exports
+showmount -e ${tgtip}

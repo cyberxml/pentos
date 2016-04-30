@@ -1,0 +1,19 @@
+
+# define as appropriate
+export tgtip=192.168.0.60
+ 
+ssh msfadmin@${tgtip}
+
+# if this is the fist time connecting to this ip
+# a prompt will appear to approve the connection
+
+#Are you sure you want to continue connecting (yes/no)? yes
+
+# you will be connected to the Metasploitable host
+# type 'exit' to leave
+
+#msfadmin@metasploitable:~$ exit
+#logout
+#Connection to 192.168.0.60 closed.
+
+

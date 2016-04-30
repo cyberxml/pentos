@@ -16,4 +16,11 @@ yum -y install freetype
 
 cd /opt
 git clone https://github.com/breenmachine/httpscreenshot
-cd /opt/httpscreenshot
+
+mkdir /usr/local/httpscreenshot
+mkdir /usr/local/httpscreenshot/bin
+cp -rp /opt/httpscreenshot/* /usr/local/httpscreenshot/bin
+
+echo "pathmunge /usr/local/httpscreenshot/bin" > /etc/profile.d/pentos-httpscreenshot.sh
+
+

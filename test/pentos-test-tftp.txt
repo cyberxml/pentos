@@ -1,0 +1,12 @@
+
+
+# define as appropriate
+export tgtip=192.168.0.60
+
+tftp ${tgtip}
+
+# should enter a tftp shell on target
+# enter 'quit' to exit
+
+#tftp> quit
+

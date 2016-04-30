@@ -1,0 +1,15 @@
+
+# define as appropriate
+export tgtip=192.168.0.60
+
+ftp ${tgtip}
+
+#Name (tgtip:root): msfadmin  
+#331 Please specify the password.
+#Password:
+#230 Login successful.
+#Remote system type is UNIX.
+#Using binary mode to transfer files.
+#ftp> quit
+#221 Goodbye.
+

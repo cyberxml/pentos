@@ -1,0 +1,19 @@
+
+# define as appropriate
+export tgtip=192.168.0.60
+
+telnet ${tgtip}
+
+# you will get a login prompt
+# login with msfadmin as name and password
+
+
+#metasploitable login: msfadmin
+#Password: msfadmin
+
+# type exit to exit the telnet shell
+
+#msfadmin@metasploitable:~$ exit
+#Connection closed by foreign host.
+ 
+

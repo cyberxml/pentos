@@ -91,3 +91,4 @@ rpm -ivh epel-release-6-8.noarch.rpm
 yum -y install p7zip
 #yum -y install ntfs-3g
 yum -y install rkhunter
+yum -y install postgresql-server

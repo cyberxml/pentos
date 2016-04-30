@@ -1,0 +1,15 @@
+
+# define as appropriate
+export tgtip=192.168.0.60
+
+# this command will fail
+# but demonstrates that it runs
+
+vncviewer ${tgtip}:0a
+
+# a password prompt is displayed
+# enter: msfadmin<enter>
+
+# an authentication error dialog is displayed
+# enter [ok] to close the dialog
+

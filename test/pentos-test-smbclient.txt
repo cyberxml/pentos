@@ -1,0 +1,28 @@
+
+# define as appropriate
+export tgtip=102.168.0.60
+
+# metasploitable allows anonymous smb connections
+smbclient -N -L ${tgtip}
+
+#Anonymous login successful
+#Domain=[WORKGROUP] OS=[Unix] Server=[Samba 3.0.20-Debian]
+#
+#	Sharename       Type      Comment
+#	---------       ----      -------
+#	print$          Disk      Printer Drivers
+#	tmp             Disk      oh noes!
+#	opt             Disk      
+#	IPC$            IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+#	ADMIN$          IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+#Anonymous login successful
+#Domain=[WORKGROUP] OS=[Unix] Server=[Samba 3.0.20-Debian]
+#
+#	Server               Comment
+#	---------            -------
+#	METASPLOITABLE       metasploitable server (Samba 3.0.20-Debian)
+#
+#	Workgroup            Master
+#	---------            -------
+#	WORKGROUP            
+
