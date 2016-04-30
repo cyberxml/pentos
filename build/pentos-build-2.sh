@@ -28,6 +28,7 @@ yum -y install tigervnc
 yum -y install irssi
 yum -y install net-snmp-utils
 yum -y install nc
+yum -y install rsh
 
 # --------- scripting ----------
 
