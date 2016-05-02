@@ -1,0 +1,56 @@
+platform,category,type,program,description,source/rpm,download
+multi,3rd party database tool,COTS,Microsoft JDBC driver,Java Database Connection utility,https://www.microsoft.com/en-US/download/details.aspx?id=11774,https://www.microsoft.com/en-US/download/details.aspx?id=11774
+multi,3rd party database tool,COTS,Microsoft ODBC driver,Open Database Connection utility,https://www.microsoft.com/en-us/download/details.aspx?id=36434,https://www.microsoft.com/en-us/download/details.aspx?id=36434
+multi,3rd party database tool,COTS,Oracle JDBC drivers,Java Database Connection utility,http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html,http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html
+multi,3rd party database tool,COTS,Oracle ODBC drivers,Open Database Connection utility,http://www.oracle.com/technetwork/database/windows/downloads/index-096177.html,http://www.oracle.com/technetwork/database/windows/downloads/index-096177.html
+multi,3rd party security tool,COTS,Wireshark,Network Packet Analysis,https://www.wireshark.org/,https://www.wireshark.org/#download
+multi,3rd party security tool,FOSS,Cisco Router Audit Tool,cisco router audit tool,http://benchmarks.cisecurity.org/downloads/show-single/?file=rat.unix.253,http://benchmarks.cisecurity.org/downloads/browse/?category=tools.rat
+multi,3rd party security tool,FOSS,John the Ripper,password cracker,http://www.openwall.com/john/,http://www.openwall.com/john/j/john-1.8.0-jumbo-1.tar.gz
+multi,3rd party security tool,FOSS,Metasploit-Framework,exploit framework,https://github.com/rapid7/metasploit-framework,http://rpm.metasploit.com/
+multi,3rd party security tool,FOSS,OpenSCAP,SCAP compliance checker,http://www.open-scap.org/,https://github.com/OpenSCAP/openscap
+multi,3rd party security tool,FOSS,OpenVAS,vulnerability scanner,http://www.openvas.org/,http://www.openvas.org/download.html
+multi,3rd party security tool,FOSS,OWASP ZAP,transparent web proxy / web analysis,https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project ,https://github.com/zaproxy/zaproxy/releases/download/2.4.2/ZAP_2.4.2_Linux.tar.gz
+multi,command line utility,FOSS,Java,cross platform compiler,https://www.java.com/en/,http://www.java.com/en/download/manual.jsp
+multi,gui utility,FOSS,Squirrel SQL,JDBC Database Browser,http://www.squirrelsql.org/,http://www.squirrelsql.org/
+multi,script engines,FOSS,perl,script language supporting other tools,https://www.perl.org/,http://www.activestate.com/activeperl/downloads
+multi,script engines,FOSS,php,script language supporting other tools,https://secure.php.net/,http://windows.php.net/download/
+multi,script engines,FOSS,python,script language supporting other tools,https://www.python.org/,https://www.python.org/downloads/
+multi,script engines,FOSS,ruby,script language supporting other tools,https://www.ruby-lang.org/en/,https://www.ruby-lang.org/en/downloads/
+red hat 6 / centos 6,3rd party security tool,FOSS,creddump,windows hash reader,https://github.com/moyix/creddump,https://github.com/moyix/creddump
+red hat 6 / centos 6,3rd party security tool,FOSS,Exploit DB,database of exploit shell code,https://www.exploit-db.com/,https://github.com/offensive-security/exploit-database
+red hat 6 / centos 6,3rd party security tool,FOSS,HTTPScreenshot,web site screen grabber,https://github.com/breenmachine/httpscreenshot,https://github.com/breenmachine/httpscreenshot
+red hat 6 / centos 6,3rd party security tool,FOSS,masscan,optimized network scanner,https://github.com/robertdavidgraham/masscan,https://github.com/robertdavidgraham/masscan
+red hat 6 / centos 6,3rd party security tool,FOSS,Nikto,web vulnerability scanner,https://cirt.net/Nikto2,https://github.com/sullo/nikto
+red hat 6 / centos 6,3rd party security tool,FOSS,phantomjs,javascript library to support httpscreenshote,https://github.com/ariya/phantomjs,https://github.com/ariya/phantomjs
+red hat 6 / centos 6,3rd party security tool,FOSS,postgresql-server,database for metasploit-framework,rpm postgresql-server,yum repository
+red hat 6 / centos 6,3rd party security tool,FOSS,Responder,configurable authentication server,https://github.com/SpiderLabs/Responder,https://github.com/SpiderLabs/Responder
+red hat 6 / centos 6,3rd party security tool,FOSS,Veil-Framework,Metasploit extension to obfuscate exploit code,https://www.veil-framework.com/,https://github.com/Veil-Framework/
+red hat 6 / centos 6,3rd party security tool,FOSS,wireshark,optimized network scanner,rpm wireshark,yum repository
+red hat 6 / centos 6,command line utility,FOSS,curl ,web client,rpm curl,yum repository
+red hat 6 / centos 6,command line utility,FOSS,ftp ,ftp client,rpm ftp,yum repository
+red hat 6 / centos 6,command line utility,FOSS,irssi ,irc chat client ,rpm irssi,yum repository
+red hat 6 / centos 6,command line utility,FOSS,ldapsearch,ldap client ,rpm openldap-clients,yum repository
+red hat 6 / centos 6,command line utility,FOSS,lynx ,web client,rpm lynx,yum repository
+red hat 6 / centos 6,command line utility,FOSS,mailx,email client ,rpm mailx,yum repository
+red hat 6 / centos 6,command line utility,FOSS,mutt,email client ,rpm mutt,yum repository
+red hat 6 / centos 6,command line utility,FOSS,mysql ,MySQL Server sql client,rpm mysql,yum repository
+red hat 6 / centos 6,command line utility,FOSS,nc,netcat network server/client ,rpm nc,yum repository
+red hat 6 / centos 6,command line utility,FOSS,nmap ,network scanner,rpm nmap,yum repository
+red hat 6 / centos 6,command line utility,FOSS,nslookup ,dns client ,rpm bind-utils,yum repository
+red hat 6 / centos 6,command line utility,FOSS,psql ,PostgreSQL Server sql client ,rpm postgresql,yum repository
+red hat 6 / centos 6,command line utility,FOSS,rpcinfo ,rpc scanner ,rpm rpcbind,yum repository
+red hat 6 / centos 6,command line utility,FOSS,scp ,ssh file transfer client ,rpm openssh-clients,yum repository
+red hat 6 / centos 6,command line utility,FOSS,sftp ,secure ftp client ,rpm openssh-clients,yum repository
+red hat 6 / centos 6,command line utility,FOSS,showmount ,nfs scanner ,rpm nfs-utils,yum repository
+red hat 6 / centos 6,command line utility,FOSS,smbclient ,samba client ,rpm samba-clients,yum repository
+red hat 6 / centos 6,command line utility,FOSS,snmpwalk ,snmp client ,rpm net-snmp-utils,yum repository
+red hat 6 / centos 6,command line utility,FOSS,sqlmap,sql utilities,https://github.com/sqlmapproject/sqlmap,https://github.com/sqlmapproject/sqlmap
+red hat 6 / centos 6,command line utility,FOSS,ssh ,ssh client ,rpm openssh-clients,yum repository
+red hat 6 / centos 6,command line utility,FOSS,tcpdump ,network sniffer,rpm tcpdump,yum repository
+red hat 6 / centos 6,command line utility,FOSS,telnet ,telnet client,rpm telnet,yum repository
+red hat 6 / centos 6,command line utility,FOSS,tftp ,tftp client,rpm tftp,yum repository
+red hat 6 / centos 6,command line utility,FOSS,tsql ,SQL Server sql client ,rpm freedts,fedora epel
+red hat 6 / centos 6,command line utility,FOSS,vncviewer ,vnc client ,rpm tigervnc,yum repository
+red hat 6 / centos 6,command line utility,FOSS,wget ,web client,rpm wget,yum repository
+red hat 6 / centos 6,gui utility,FOSS,evolution,mail client,rpm evolution,yum repository
+red hat 6 / centos 6,gui utility,FOSS,firefox ,web browser,rpm firefox,yum repository

@@ -1,0 +1,19 @@
+
+For proxy config
+1) edit System > Preferences > Network Proxy
+2) define proxies in Firefox > Menu > Preferences > Advanced > Network
+3) add certificates to Firefox if SSL proxy
+4) edit /etc/yum.conf
+	proxy=http://<proxy name or ip>:<port>
+5) export http_proxy=http://<proxy name or ip>:<port>
+6) export https_proxy=http://<proxy name or ip>:<port>
+7) git config --global http.proxy http://<proxy name or ip>:<port>
+8) if SSL proxy
+	git config --global http.sslverify false
+
+Filtering proxies may block access to certain websites such as Metasploit or John.
+	tough cookies
+
+OpenVAS build is not trustworthy.
+
+Veil build is not trustworthy.
