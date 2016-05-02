@@ -29,6 +29,7 @@ yum -y install irssi
 yum -y install net-snmp-utils
 yum -y install nc
 yum -y install rsh
+yum -y install wireshark
 
 # --------- scripting ----------
 
