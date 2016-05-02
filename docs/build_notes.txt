@@ -14,6 +14,11 @@ For proxy config
 Filtering proxies may block access to certain websites such as Metasploit or John.
 	tough cookies
 
+RAT build requires a manual download.
+
+ZAProxy might require a manual download
+	would not redirect behind proxy
+
 OpenVAS build is not trustworthy.
 
 Veil build is not trustworthy.
