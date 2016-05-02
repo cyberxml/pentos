@@ -10,10 +10,5 @@ rpm -i perl-Time-HiRes-1.9724-1.el6.rfx.x86_64.rpm
 cd /opt
 git clone https://github.com/sullo/nikto
 
-mkdir /usr/local/nikto
-mkdir /usr/local/nikto/bin
-
-cp -rp /opt/nikto/program/* /usr/local/nikto/bin
-
-echo "pathmunge /usr/local/nikto/bin" > /etc/profile.d/pentos-nikto.sh
+echo "pathmunge /opt/nikto/bin" > /etc/profile.d/pentos-nikto.sh
 

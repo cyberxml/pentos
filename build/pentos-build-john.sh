@@ -12,8 +12,5 @@ cd /opt/john-1.8.0-jumbo-1/src
 ./configure --disable-openmp
 make
 make install
-mkdir /usr/local/john
-mkdir /usr/local/john/bin
-cp -rp /opt/john-1.8.0-jumbo-1/run/* /usr/local/john/bin 
 
-echo "pathmunge /usr/local/john/bin" > /etc/profile.d/pentos-john.sh
+echo "pathmunge /opt/john-1.8.0-jumbo-1/run" > /etc/profile.d/pentos-john.sh

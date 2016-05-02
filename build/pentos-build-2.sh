@@ -81,6 +81,7 @@ yum -y install libtool
 yum -y install swig
 
 # install pip
+# make sure env is set right for proxy if applicable
 cd /opt
 wget http://peak.telecommunity.com/dist/ez_setup.py
 python ez_setup.py
