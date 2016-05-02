@@ -10,6 +10,10 @@ echo #======================================
 echo
  
 firefox https://benchmarks.cisecurity.org/downloads/form/index.cfm?download=rat.unix.253 
+echo "place rat-2.5.3.zip into the /root/Downloads directory"
+echo "hit enter to continue"
+read dummy_var  
+
 
 # assume that file is in /root/Downloads
 cd /opt
@@ -21,7 +25,7 @@ perl -MCPAN -e 'my $c = "CPAN::HandleConfig"; $c->load(doit => 1, autoconfig => 
 perl -MCPAN -e 'install Net::Telnet'
 #perl -MCPAN -e 'install Term::ReadKey'
 perl -MCPAN -e 'install Test::Simple'
-perl -MCPAN -e 'install Net::Telnet:Cisco'
+perl -MCPAN -e 'install Net::Telnet::Cisco'
 
 cd /opt/rat
 perl Makefile.PL

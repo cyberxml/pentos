@@ -67,6 +67,7 @@ yum -y install ruby
 yum -y install rubygems
 
 yum -y install aide
+yum -y install postgresql-server
 
 # --------- build tools ----------
 yum -y install gcc
@@ -80,18 +81,12 @@ yum -y install bzip2-devel
 yum -y install libtool
 yum -y install swig
 
-# install pip
-# make sure env is set right for proxy if applicable
-cd /opt
-wget http://peak.telecommunity.com/dist/ez_setup.py
-python ez_setup.py
-easy_install pip
-
-
 # --------- enable epel ----------
 wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 rpm -ivh epel-release-6-8.noarch.rpm
+# for pip, you need this env variable
+# export https_proxy="http://<proxy.server>:<port>"
+yum -y install pip
 yum -y install p7zip
 #yum -y install ntfs-3g
 yum -y install rkhunter
-yum -y install postgresql-server

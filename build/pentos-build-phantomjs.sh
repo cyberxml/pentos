@@ -15,6 +15,7 @@ cd /opt/phantomjs
 # build script includes remote option for git which breaks in CentOS 6
 mv build.py build-remote.py
 sed 's/"--remote"//' build-remote.py > build.py
+chmod +x build.py
 ./build.py
 
 cp /opt/phantomjs/bin/phantomjs /usr/local/bin
@@ -24,5 +25,5 @@ cp /opt/phantomjs/bin/phantomjs /usr/local/bin
 # cd /opt/phantomjs/rpm
 # ./mkrpm.sh phantom.js /opt/phantomjs/rpm
 
-rm -rf /opt/phantomjs
+#rm -rf /opt/phantomjs
 
