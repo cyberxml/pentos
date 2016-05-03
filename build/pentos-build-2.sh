@@ -30,6 +30,7 @@ yum -y install net-snmp-utils
 yum -y install nc
 yum -y install rsh
 yum -y install wireshark
+yum -y install wireshark-gnome
 
 # --------- scripting ----------
 

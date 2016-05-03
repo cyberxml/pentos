@@ -22,3 +22,6 @@ ZAProxy might require a manual download
 OpenVAS build is not trustworthy.
 
 Veil build is not trustworthy.
+
+For command line menu items,
+	open up gnome-terminal, go to Edit, Profile preferences and click the Title and Command tab. Change the "When command exits" option to "Hold the terminal open".

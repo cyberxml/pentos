@@ -13,7 +13,7 @@ wget --no-check-certificate ${rpmurl}
 
 rpm -ivh metasploit-framework*rpm
 
-mv /opt/metasploit-framework /usr/local
+chgrp -hR pentester /opt/metasploit-framework/bin
 
 echo "pathmunge /opt/metasploit-framework/bin" > /etc/profile.d/pentos-metasploit.sh
 
