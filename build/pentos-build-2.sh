@@ -82,6 +82,15 @@ yum -y install bzip2-devel
 yum -y install libtool
 yum -y install swig
 
+# --------- openscap ----------
+yum -y install openscap
+yum -y install scap-workbench
+yum -y install scap-security-guide
+cd /usr/share/xml/scap/ssg/content
+wget https://raw.githubusercontent.com/GovReady/govready/master/templates/ssg-centos6-cpe-oval.xml
+wget https://raw.githubusercontent.com/GovReady/govready/master/templates/ssg-centos6-cpe-dictionary.xml
+cd /opt/pentos/build
+
 # --------- enable epel ----------
 wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 rpm -ivh epel-release-6-8.noarch.rpm
