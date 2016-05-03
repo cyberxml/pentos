@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=gnome-terminal
+Name[en_US]=creddump::lsadump
+Name=creddump::lsadump
+Exec=gnome-terminal -e "bash -c \\"cd /opt/creddump;./lsadump.py; exec bash\\""
+Icon=gnome-terminal
+Categories=Other

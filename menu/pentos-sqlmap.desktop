@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[en_US]=gnome-panel-launcher
+Exec=gnome-terminal -e "bash -c \"cd /opt/sqlmap;./sqlmap.py -h; exec bash\""
+Name[en_US]=SQL Map
+Name=SQL Map
+Icon=gnome-terminal

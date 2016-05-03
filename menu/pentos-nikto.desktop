@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=gnome-terminal
+Name[en_US]=nikto
+Name=nikto
+Exec=gnome-terminal -e "bash -c \\"cd /opt/nikto/program;./nikto.pl -Help; exec bash\\""
+Icon=gnome-terminal
+Categories=Other
