@@ -260,4 +260,13 @@ cd /opt/pentos/build
 
 ./pentos-build-2.sh
 
+grub-crypt --sha-512
+
+When prompted, enter a password different from the root password
+
+The command returns a password hash
+
+Copy the password-hash and enter the following line into /etc/grub.conf
+
+password --encrypted <password-hash>
 

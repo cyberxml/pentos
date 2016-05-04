@@ -86,10 +86,7 @@ yum -y install swig
 yum -y install openscap
 yum -y install scap-workbench
 yum -y install scap-security-guide
-cd /usr/share/xml/scap/ssg/content
-wget https://raw.githubusercontent.com/GovReady/govready/master/templates/ssg-centos6-cpe-oval.xml
-wget https://raw.githubusercontent.com/GovReady/govready/master/templates/ssg-centos6-cpe-dictionary.xml
-cd /opt/pentos/build
+cp -f /opt/pentos/docs/ssg*centos6*.xml /usr/share/xml/scap/ssg/content
 
 # --------- enable epel ----------
 wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
