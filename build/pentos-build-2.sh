@@ -93,7 +93,7 @@ wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch
 rpm -ivh epel-release-6-8.noarch.rpm
 # for pip, you need this env variable
 # export https_proxy="http://<proxy.server>:<port>"
-yum -y install pip
+yum -y install python-pip
 yum -y install p7zip
 #yum -y install ntfs-3g
 yum -y install rkhunter
