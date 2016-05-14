@@ -14,7 +14,7 @@ make
 make install
 
 chgrp -hR pentester /opt/john-1.8.0-jumbo-1
-chmod 750 john-1.8.0-jumbo-1/
-chmod 770 john-1.8.0-jumbo-1/run
+chmod 750 /opt/john-1.8.0-jumbo-1/
+chmod 770 /opt/john-1.8.0-jumbo-1/run
 
 echo "pathmunge /opt/john-1.8.0-jumbo-1/run" > /etc/profile.d/pentos-john.sh
