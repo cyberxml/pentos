@@ -27,7 +27,11 @@ For command line menu items,
 	open up gnome-terminal, go to Edit, Profile preferences and click the Title and Command tab. Change the "When command exits" option to "Hold the terminal open".
 
 
+cp ssg-centos6-* /usr/share/xml/scap/ssg
 oscap xccdf eval --oval-results --profile server \
+ --cpe /usr/share/xml/scap/ssg/content/ssg-centos6-cpe-dictionary.xml \
+ /usr/share/xml/scap/ssg/content/ssg-rhel6-xccdf.xml
+oscap xccdf eval --remediate --profile server \
  --cpe /usr/share/xml/scap/ssg/content/ssg-centos6-cpe-dictionary.xml \
  /usr/share/xml/scap/ssg/content/ssg-rhel6-xccdf.xml
 
