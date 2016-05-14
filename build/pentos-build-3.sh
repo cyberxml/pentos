@@ -7,7 +7,6 @@
 ./pentos-build-masscan.sh
 ./pentos-build-metasploit.sh
 ./pentos-build-nikto.sh
-./pentos-build-openscap.sh
 ./pentos-build-openvas.sh
 ./pentos-build-phantomjs.sh
 ./pentos-build-pil.sh

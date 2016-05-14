@@ -69,3 +69,14 @@ echo and login with admin and admin2wsx
 #echo please accept the security risk and log into OpenVas
 #firefox --url https://127.0.0.1:9392 
 
+
+mv /var/lib/openvas /opt
+ln -s /opt/openvas /var/lib/openvas
+
+# default admin password set to admin2wsx
+# it would be a good idea to change this later
+# openvasmd --user=admin --new-password=something
+# to test the installation
+# open firefox to the url http://127.0.0.1:9392
+# and login with admin and admin2wsx
+
