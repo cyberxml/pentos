@@ -15,5 +15,4 @@
 ./pentos-build-sqlmap.sh
 ./pentos-build-squirrelsql.sh
 ./pentos-build-veil.sh
-./pentos-build-vm1.sh
 ./pentos-build-zap.sh
