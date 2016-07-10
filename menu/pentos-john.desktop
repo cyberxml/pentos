@@ -7,6 +7,6 @@ Terminal=false
 Icon[en_US]=gnome-terminal
 Name[en_US]=John the Ripper
 Name=John the Ripper
-Exec=gnome-terminal -e "bash -c \\"cd /opt/john-1.8.0-jumbo-1/run;./john; exec bash\\""
+Exec=gnome-terminal -e "bash -c \\"cd /opt/pentos/apps/john-1.8.0-jumbo-1/run;./john; exec bash\\""
 Icon=gnome-terminal
 Categories=Other

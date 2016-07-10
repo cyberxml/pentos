@@ -7,6 +7,6 @@ Terminal=false
 Icon[en_US]=gnome-terminal
 Name[en_US]=Metasploit Framework
 Name=Metasploit Framework
-Exec=gnome-terminal -e "bash -c \\"cd /opt/metasploit-framework;./msfdb init;./msfconsole; exec bash\\""
+Exec=gnome-terminal -e "bash -c \\"cd /opt/pentos/apps/metasploit-framework;./msfdb init;./msfconsole; exec bash\\""
 Icon=gnome-terminal
 Categories=Other

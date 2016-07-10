@@ -7,6 +7,6 @@ Terminal=false
 Icon[en_US]=gnome-terminal
 Name[en_US]=rat
 Name=rat
-Exec=gnome-terminal -e "bash -c \\"cd /opt/rat/bin;./rat; exec bash\\""
+Exec=gnome-terminal -e "bash -c \\"cd /opt/pentos/apps/rat/bin;./rat; exec bash\\""
 Icon=gnome-terminal
 Categories=Other

@@ -7,6 +7,6 @@ Terminal=false
 Icon[en_US]=gnome-terminal
 Name[en_US]=HTTP Screenshot
 Name=HTTP Screenshot
-Exec=gnome-terminal -e "bash -c \\"cd /opt/httpscreenshot;./httpscreenshot.py; exec bash\\""
+Exec=gnome-terminal -e "bash -c \\"cd /opt/pentos/apps/httpscreenshot;./httpscreenshot.py; exec bash\\""
 Icon=gnome-terminal
 Categories=Other

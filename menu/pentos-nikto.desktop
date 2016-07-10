@@ -7,6 +7,6 @@ Terminal=false
 Icon[en_US]=gnome-terminal
 Name[en_US]=nikto
 Name=nikto
-Exec=gnome-terminal -e "bash -c \\"cd /opt/nikto/program;./nikto.pl -Help; exec bash\\""
+Exec=gnome-terminal -e "bash -c \\"cd /opt/pentos/apps/nikto/program;./nikto.pl -Help; exec bash\\""
 Icon=gnome-terminal
 Categories=Other
