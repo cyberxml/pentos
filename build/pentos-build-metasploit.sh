@@ -11,7 +11,7 @@ rpmurl=https://rpm.metasploit.com/${base}
 
 wget --no-check-certificate ${rpmurl}
 
-rpm -ivh metasploit-framework*rpm
+rpm -ivh --replacefiles metasploit-framework*rpm
 
 chgrp -hR pentester /opt/metasploit-framework/bin
 

@@ -82,6 +82,10 @@ yum -y install bzip2-devel
 yum -y install libtool
 yum -y install swig
 
+
+# --------- ettercap ---------
+yum -y install ettercap
+
 # --------- openscap ----------
 yum -y install openscap
 yum -y install scap-workbench

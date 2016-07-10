@@ -20,6 +20,8 @@ rpm -i hiredis-0.10.1-3.el6.x86_64.rpm
 
 wget -q -O - http://www.atomicorp.com/installers/atomic |sh
 
+cp /opt/atomic/atomic-gnutls3/root/usr/lib64/* /usr/lib64
+
 yum -y --enablerepo=atomic-testing install redis
 echo unixsocket /tmp/redis.sock >> /etc/redis.conf
 echo unixsocketperm 700  >> /etc/redis.conf
@@ -34,7 +36,7 @@ yum -y --enablerepo=atomic-testing install openvas-libraries
 yum -y --enablerepo=atomic-testing install openvas-scanner
 yum -y --enablerepo=atomic-testing install openvas-cli
 yum -y --enablerepo=atomic install wmi
-yum -y --enablerepo=atomic downgrade openvas-libraries
+#yum -y --enablerepo=atomic downgrade openvas-libraries
 yum -y --enablerepo=atomic install openvas-manager
 yum -y --enablerepo=atomic install openvas
 #yum -y --enablerepo=atomic install greenbone-security-assistant
