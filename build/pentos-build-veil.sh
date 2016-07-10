@@ -44,9 +44,9 @@ rpm -i http://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts
 # --------------------------------------------
 # Veil-Evasion: Source
 # --------------------------------------------
-cd /opt 
+cd /opt/pentos/apps 
 git clone https://github.com/Veil-Framework/Veil-Evasion.git
-cd /opt/Veil-Evasion/setup
+cd /opt/pentos/apps/Veil-Evasion/setup
 runuser="$(whoami)"
 rootdir=$(cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd)
 silent=false
@@ -97,8 +97,8 @@ echo -e '\n\n [*] Installing (Wine) Python Dependencies - pywin32...'
 wine C://Python27//python.exe C://Python27//Scripts//pywin32_postinstall.py -install
 
 echo -e '\n\n [*] Installing PyInstaller (via ZIP)'
-sudo unzip -q -o -d /opt "${rootdir}/setup/pyinstaller-2.0.zip"
-sudo chmod -R 0755 /opt/pyinstaller-2.0/
+sudo unzip -q -o -d /opt/pentos/apps "${rootdir}/setup/pyinstaller-2.0.zip"
+sudo chmod -R 0755 /opt/pentos/apps/pyinstaller-2.0/
 
 # --------------------------------------------
 # Veil-Evasion: Ruby in Wine
@@ -138,7 +138,7 @@ popd >/dev/null
 #echo -e ' [*] Installing Go (via TAR)'
 ##tar -xf "${rootdir}/setup/go1.4.2.src.tar.gz" -C /usr/src/
 ##20160422rb: new go source
-#cd /opt/Veil-Evasion/setup
+#cd /opt/pentos/apps/Veil-Evasion/setup
 #wget https://www.veil-framework.com/InstallMe/go153x64.tar.gz
 #tar -xf "${rootdir}/setup/go153x64.tar.gz" -C /usr/src/
 

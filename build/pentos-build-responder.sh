@@ -2,7 +2,7 @@
 # Responder
 #----------------------------------
 # /opt/Responder/Responder.py
-cd /opt
+cd /opt/pentos/apps
 git clone https://github.com/SpiderLabs/Responder
-chmod +x /opt/Responder/Responder.py
+chmod +x /opt/pentos/apps/Responder/Responder.py
 

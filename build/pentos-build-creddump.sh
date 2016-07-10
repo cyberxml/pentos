@@ -4,7 +4,7 @@
 cd /opt
 git clone https://github.com/moyix/creddump
 
-echo "pathmunge /opt/creddump" > /etc/profile.d/pentos-creddump.sh
+echo "pathmunge /opt/pentos/apps/creddump" > /etc/profile.d/pentos-creddump.sh
 
 
 

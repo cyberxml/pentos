@@ -1,4 +1,4 @@
-cd /opt
+cd /opt/pentos/apps
 #yum -y install kernel-headers
 yum -y install yum-plugin-priorities
 wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm

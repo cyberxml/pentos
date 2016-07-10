@@ -14,9 +14,9 @@ yum -y install openssl-devel
 yum -y install fontconfig
 yum -y install freetype
 
-cd /opt
+cd /opt/pentos/apps
 git clone https://github.com/breenmachine/httpscreenshot
 
-echo "pathmunge /opt/httpscreenshot/bin" > /etc/profile.d/pentos-httpscreenshot.sh
+echo "pathmunge /opt/pentos/apps/httpscreenshot/bin" > /etc/profile.d/pentos-httpscreenshot.sh
 
 

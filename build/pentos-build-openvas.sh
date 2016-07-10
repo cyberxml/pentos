@@ -10,7 +10,7 @@
 yum -y install net-tools
 yum -y install alien 
 
-cd /opt
+cd /opt/pentos/apps
 
 wget http://dl.fedoraproject.org/pub/epel/6/x86_64/heimdal-libs-1.6.0-0.9.20140621gita5adc06.el6.x86_64.rpm
 rpm -i heimdal-libs-1.6.0-0.9.20140621gita5adc06.el6.x86_64.rpm
@@ -20,7 +20,7 @@ rpm -i hiredis-0.10.1-3.el6.x86_64.rpm
 
 wget -q -O - http://www.atomicorp.com/installers/atomic |sh
 
-cp /opt/atomic/atomic-gnutls3/root/usr/lib64/* /usr/lib64
+cp /opt/pentos/apps/atomic/atomic-gnutls3/root/usr/lib64/* /usr/lib64
 
 yum -y --enablerepo=atomic-testing install redis
 echo unixsocket /tmp/redis.sock >> /etc/redis.conf
@@ -72,7 +72,7 @@ echo and login with admin and admin2wsx
 #firefox --url https://127.0.0.1:9392 
 
 
-mv /var/lib/openvas /opt
+mv /var/lib/openvas /opt/pentos/apps
 ln -s /opt/openvas /var/lib/openvas
 
 # default admin password set to admin2wsx

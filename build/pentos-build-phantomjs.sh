@@ -7,18 +7,18 @@ yum -y install gcc gcc-c++ make flex bison gperf ruby \
   openssl-devel freetype-devel fontconfig-devel libicu-devel sqlite-devel \
   libpng-devel libjpeg-devel
 
-cd /opt
+cd /opt/pentos/apps
 
 git clone https://github.com/ariya/phantomjs.git
 
-cd /opt/phantomjs
+cd /opt/pentos/apps/phantomjs
 # build script includes remote option for git which breaks in CentOS 6
 mv build.py build-remote.py
 sed 's/"--remote"//' build-remote.py > build.py
 chmod +x build.py
 ./build.py
 
-cp /opt/phantomjs/bin/phantomjs /usr/local/bin
+cp /opt/pentos/apps/phantomjs/bin/phantomjs /usr/local/bin
 
 # currently this fails
 # yum -y install rpm-build

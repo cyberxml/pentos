@@ -1,6 +1,6 @@
 # Latest Metasploitable-Framework
 
-cd /opt
+cd /opt/pentos/apps
 rm -f metasploit-framework*rpm
 
 base=`wget -qO- http://rpm.metasploit.com/ | grep metasploit-framework | tail -1 | cut -d'"' -f2`
@@ -15,6 +15,6 @@ rpm -ivh --replacefiles metasploit-framework*rpm
 
 chgrp -hR pentester /opt/metasploit-framework/bin
 
-echo "pathmunge /opt/metasploit-framework/bin" > /etc/profile.d/pentos-metasploit.sh
+echo "pathmunge /opt/pentos/apps/metasploit-framework/bin" > /etc/profile.d/pentos-metasploit.sh
 
 
