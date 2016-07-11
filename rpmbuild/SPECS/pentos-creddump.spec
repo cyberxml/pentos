@@ -34,56 +34,56 @@ It is also the first tool that does all of these things in an offline way (actua
 %build
 
 %install
-mkdir -p "$RPM_BUILD_ROOT"
-cp -R * "$RPM_BUILD_ROOT"
+mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/creddump"
+cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/creddump"
 
 %clean
 #[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 
 %files
-/README
-/pwdump.py
-/cachedump.py
-/framework/addrspace.py
-/framework/__init__.py
-/framework/newobj.py
-/framework/types.py
-/framework/win32/domcachedump.py
-/framework/win32/__init__.py
-/framework/win32/hashdump.py
-/framework/win32/lsasecrets.py
-/framework/win32/rawreg.py
-/framework/object.py
-/lsadump.py
-/COPYING
-/CHANGELOG
+/usr/local/pentos/apps/creddump/README
+/usr/local/pentos/apps/creddump/pwdump.py
+/usr/local/pentos/apps/creddump/cachedump.py
+/usr/local/pentos/apps/creddump/framework/addrspace.py
+/usr/local/pentos/apps/creddump/framework/__init__.py
+/usr/local/pentos/apps/creddump/framework/newobj.py
+/usr/local/pentos/apps/creddump/framework/types.py
+/usr/local/pentos/apps/creddump/framework/win32/domcachedump.py
+/usr/local/pentos/apps/creddump/framework/win32/__init__.py
+/usr/local/pentos/apps/creddump/framework/win32/hashdump.py
+/usr/local/pentos/apps/creddump/framework/win32/lsasecrets.py
+/usr/local/pentos/apps/creddump/framework/win32/rawreg.py
+/usr/local/pentos/apps/creddump/framework/object.py
+/usr/local/pentos/apps/creddump/lsadump.py
+/usr/local/pentos/apps/creddump/COPYING
+/usr/local/pentos/apps/creddump/CHANGELOG
 # generated in BUILDROOT
-/cachedump.pyc
-/cachedump.pyo
-/framework/__init__.pyc
-/framework/__init__.pyo
-/framework/addrspace.pyc
-/framework/addrspace.pyo
-/framework/newobj.pyc
-/framework/newobj.pyo
-/framework/object.pyc
-/framework/object.pyo
-/framework/types.pyc
-/framework/types.pyo
-/framework/win32/__init__.pyc
-/framework/win32/__init__.pyo
-/framework/win32/domcachedump.pyc
-/framework/win32/domcachedump.pyo
-/framework/win32/hashdump.pyc
-/framework/win32/hashdump.pyo
-/framework/win32/lsasecrets.pyc
-/framework/win32/lsasecrets.pyo
-/framework/win32/rawreg.pyc
-/framework/win32/rawreg.pyo
-/lsadump.pyc
-/lsadump.pyo
-/pwdump.pyc
-/pwdump.pyo
+/usr/local/pentos/apps/creddump/cachedump.pyc
+/usr/local/pentos/apps/creddump/cachedump.pyo
+/usr/local/pentos/apps/creddump/framework/__init__.pyc
+/usr/local/pentos/apps/creddump/framework/__init__.pyo
+/usr/local/pentos/apps/creddump/framework/addrspace.pyc
+/usr/local/pentos/apps/creddump/framework/addrspace.pyo
+/usr/local/pentos/apps/creddump/framework/newobj.pyc
+/usr/local/pentos/apps/creddump/framework/newobj.pyo
+/usr/local/pentos/apps/creddump/framework/object.pyc
+/usr/local/pentos/apps/creddump/framework/object.pyo
+/usr/local/pentos/apps/creddump/framework/types.pyc
+/usr/local/pentos/apps/creddump/framework/types.pyo
+/usr/local/pentos/apps/creddump/framework/win32/__init__.pyc
+/usr/local/pentos/apps/creddump/framework/win32/__init__.pyo
+/usr/local/pentos/apps/creddump/framework/win32/domcachedump.pyc
+/usr/local/pentos/apps/creddump/framework/win32/domcachedump.pyo
+/usr/local/pentos/apps/creddump/framework/win32/hashdump.pyc
+/usr/local/pentos/apps/creddump/framework/win32/hashdump.pyo
+/usr/local/pentos/apps/creddump/framework/win32/lsasecrets.pyc
+/usr/local/pentos/apps/creddump/framework/win32/lsasecrets.pyo
+/usr/local/pentos/apps/creddump/framework/win32/rawreg.pyc
+/usr/local/pentos/apps/creddump/framework/win32/rawreg.pyo
+/usr/local/pentos/apps/creddump/lsadump.pyc
+/usr/local/pentos/apps/creddump/lsadump.pyo
+/usr/local/pentos/apps/creddump/pwdump.pyc
+/usr/local/pentos/apps/creddump/pwdump.pyo
 
 
 %changelog
