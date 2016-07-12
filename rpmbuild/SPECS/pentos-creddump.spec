@@ -1,7 +1,7 @@
 # cd /opt/pentos/rpmbuild/SOURCES
 # git clone https://github.com/moyix/creddump
 # mv creddump pentos-creddump-0.3
-# tar --exclude='pentos-creddump-0.3/.git' -cvzf pentos-creddump-0.3.tar.gz pentos-creddump-0.3
+# tar --exclude='pentos-creddump-0.3/.git' -czf pentos-creddump-0.3.tar.gz pentos-creddump-0.3
 # from pentos top directory run
 # rpmbuild -ba rpmbuild/SPECS/pentos-creddump.spec
 
@@ -38,7 +38,7 @@ mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/creddump"
 cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/creddump"
 
 %clean
-#[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
+[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/local/pentos/apps/creddump/README
