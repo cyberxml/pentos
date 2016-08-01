@@ -1,19 +1,19 @@
 # cd /opt/pentos/rpmbuild/SOURCES
 # git clone https://github.com/breenmachine/httpscreenshot
-# mv httpscreenshot pentos-httpscreenshot-YYYYMM
-# tar --exclude='pentos-httpscreenshot-YYYYMM/.git' -czf pentos-httpscreenshot-YYYYMM.tar.gz pentos-httpscreenshot-YYYYMM
+# mv httpscreenshot pentos-httpscreenshot-YYYYDDD
+# tar --exclude='pentos-httpscreenshot-YYYYDDD/.git' -czf pentos-httpscreenshot-YYYYDDD.tar.gz pentos-httpscreenshot-YYYYDDD
 # from pentos top directory run
 # rpmbuild -ba rpmbuild/SPECS/pentos-httpscreenshot.spec
 
 Name:           pentos-httpscreenshot
-Version:        201607
+Version:        YYYYDDD
 Release:        0
 Summary:        HTTPScreenshot is a tool for grabbing screenshots and HTML of large numbers of websites
 Group:          Applications/Other
 License:        GPL
 URL:            https://github.com/breenmachine/httpscreenshot
 Vendor:         Breen Machine
-Source:         pentos-httpscreenshot-201607.tar.gz
+Source:         pentos-httpscreenshot-YYYYDDD.tar.gz
 Prefix:         %{_prefix}
 Packager: 	cyberxml
 BuildRoot:      %{_tmppath}/%{name}-buildroot

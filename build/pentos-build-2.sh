@@ -83,6 +83,15 @@ yum -y install libtool
 yum -y install swig
 
 
+# --------- graphviz for w3af -----
+yum -y install graphviz
+yum -y install perl-Net-RawIP
+yum -y install perl-NetPacket
+
+# -------- sqlmap ------------
+yum -y install perl-Net-RawIP
+yum -y install perl-NetPacket
+
 # --------- ettercap ---------
 yum -y install ettercap
 
