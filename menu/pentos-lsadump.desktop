@@ -7,6 +7,6 @@ Terminal=false
 Icon[en_US]=gnome-terminal
 Name[en_US]=creddump::lsadump
 Name=creddump::lsadump
-Exec=gnome-terminal -e "bash -c \\"cd /opt/pentos/apps/creddump;./lsadump.py; exec bash\\""
+Exec=gnome-terminal -e "bash -c \\"cd /usr/local/pentos/apps/creddump;./lsadump.py; exec bash\\""
 Icon=gnome-terminal
 Categories=Other

@@ -35,12 +35,19 @@ It is also the first tool that does all of these things in an offline way (actua
 
 %install
 mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/creddump"
+mkdir -p "$RPM_BUILD_ROOT/usr/share/applications"
 cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/creddump"
+cp /opt/pentos/menu/pentos-cachedump.desktop "$RPM_BUILD_ROOT/usr/share/applications"
+cp /opt/pentos/menu/pentos-lsadump.desktop "$RPM_BUILD_ROOT/usr/share/applications"
+cp /opt/pentos/menu/pentos-pwdump.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 
 %clean
 [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 
 %files
+/usr/share/applications/pentos-cachedump.desktop
+/usr/share/applications/pentos-lsadump.desktop
+/usr/share/applications/pentos-pwdump.desktop
 /usr/local/pentos/apps/creddump/README
 /usr/local/pentos/apps/creddump/pwdump.py
 /usr/local/pentos/apps/creddump/cachedump.py

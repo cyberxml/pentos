@@ -21,12 +21,15 @@ squirrelsql
 
 %install
 mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/squirrelsql"
+mkdir -p "$RPM_BUILD_ROOT/usr/share/applications"
 cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/squirrelsql"
+cp /opt/pentos/menu/pentos-squirrel.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 
 %clean
 [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 
 %files
+/usr/share/applications/pentos-squirrel.desktop
 /usr/local/pentos/apps/squirrelsql/pentos-squirrelsql-3.7.tar.gz
 /usr/local/pentos/apps/squirrelsql/squirrel-sql-3.7-standard.jar
 /usr/local/pentos/apps/squirrelsql/squirrelsql.sh

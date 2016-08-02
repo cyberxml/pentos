@@ -21,12 +21,15 @@ The OWASP Zed Attack Proxy (ZAP) is one of the world’s most popular free secur
 
 %install
 mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/zap"
+mkdir -p "$RPM_BUILD_ROOT/usr/share/applications"
 cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/zap"
+cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 
 %clean
 [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 
 %files
+/usr/share/applications/pentos-zap.desktop
 /usr/local/pentos/apps/zap/README
 /usr/local/pentos/apps/zap/db/db.properties
 /usr/local/pentos/apps/zap/db/hsqldb.properties

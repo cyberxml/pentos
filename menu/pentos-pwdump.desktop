@@ -7,6 +7,6 @@ Terminal=false
 Icon[en_US]=gnome-terminal
 Name[en_US]=creddump::pwdump
 Name=creddump::pwdump
-Exec=gnome-terminal -e "bash -c \\"cd /opt/pentos/apps/creddump;./pwdump.py; exec bash\\""
+Exec=gnome-terminal -e "bash -c \\"cd /usr/local/pentos/apps/creddump;./pwdump.py; exec bash\\""
 Icon=gnome-terminal
 Categories=Other

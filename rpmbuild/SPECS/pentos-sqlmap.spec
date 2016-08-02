@@ -22,12 +22,15 @@ sqlmap is an open source penetration testing tool that automates the process of 
 
 %install
 mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/sqlmap"
+mkdir -p "$RPM_BUILD_ROOT/usr/share/applications"
 cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/sqlmap"
+cp /opt/pentos/menu/pentos-sqlmap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 
 %clean
 [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 
 %files
+/usr/share/applications/pentos-sqlmap.desktop
 /usr/local/pentos/apps/sqlmap
 /usr/local/pentos/apps/sqlmap/udf
 /usr/local/pentos/apps/sqlmap/udf/postgresql

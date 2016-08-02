@@ -28,12 +28,15 @@ HTTPScreenshot is a tool for grabbing screenshots and HTML of large numbers of w
 
 %install
 mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/httpscreenshot"
+mkdir -p "$RPM_BUILD_ROOT/usr/share/applications"
 cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/httpscreenshot"
+cp /opt/pentos/menu/pentos-httpscreenshot.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 
 %clean
 [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 
 %files
+/usr/share/applications/pentos-httpscreenshot.desktop
 /usr/local/pentos/apps/httpscreenshot/httpscreenshot.py
 /usr/local/pentos/apps/httpscreenshot/requirements.txt
 /usr/local/pentos/apps/httpscreenshot/masshttp.sh
