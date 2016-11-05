@@ -71,4 +71,11 @@ python-simplejson
 #python-simpleparse
 rkhunter
 
-
+# pen apps
+yum install clamav
+yum install nikto
+#yum install john
+#yum install m2crypto
+#yum install masscan
+#yum install metasploit-framework
+#yum install openvas
