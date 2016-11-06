@@ -3358,13 +3358,8 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/w3af"
 /usr/local/pentos/apps/w3af/w3af/core/data/context/__init__.py
 /usr/local/pentos/apps/w3af/w3af/core/data/context/__init__.pyc
 /usr/local/pentos/apps/w3af/w3af/core/data/context/tests
-/usr/local/pentos/apps/w3af/w3af/core/data/context/tests/test_context.pyo
-/usr/local/pentos/apps/w3af/w3af/core/data/context/tests/test_context.py
 /usr/local/pentos/apps/w3af/w3af/core/data/context/tests/samples
-/usr/local/pentos/apps/w3af/w3af/core/data/context/tests/samples/quote_comment.html
 /usr/local/pentos/apps/w3af/w3af/core/data/context/tests/samples/django-500.html
-/usr/local/pentos/apps/w3af/w3af/core/data/context/tests/test_context.pyc
-/usr/local/pentos/apps/w3af/w3af/core/data/context/context.py
 /usr/local/pentos/apps/w3af/w3af/core/data/context/__init__.pyo
 /usr/local/pentos/apps/w3af/w3af/core/data/bloomfilter
 /usr/local/pentos/apps/w3af/w3af/core/data/bloomfilter/__init__.py
@@ -3589,7 +3584,6 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/w3af"
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/tests/test_all.py
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/tests/test_all.pyo
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/vulns.pyo
-/usr/local/pentos/apps/w3af/w3af/core/data/constants/top_level_domains.pyo
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/response_codes.pyo
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/websockets.py
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/file_patterns.pyo
@@ -3610,7 +3604,6 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/w3af"
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/ignored_params.py
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/http_messages.py
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/ports.pyc
-/usr/local/pentos/apps/w3af/w3af/core/data/constants/top_level_domains.py
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/encodings.pyo
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/disclaimer.pyc
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/disclaimer.pyo
@@ -3642,7 +3635,6 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/w3af"
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/cookies.pyc
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/severity.py
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/websockets.pyc
-/usr/local/pentos/apps/w3af/w3af/core/data/constants/top_level_domains.pyc
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/http_messages.pyc
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/response_codes.py
 /usr/local/pentos/apps/w3af/w3af/core/data/constants/__init__.pyo
@@ -5880,13 +5872,10 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/w3af"
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_which.pyc
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_which.py
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_is_ip_address.pyc
-/usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_is_source_file.pyo
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_common_attack_methods.pyo
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_common_attack_methods.py
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_io.pyc
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_common_attack_methods.pyc
-/usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_is_source_file.py
-/usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_is_source_file.pyc
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_io.py
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_io.pyo
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/tests/test_which.pyo
@@ -5917,7 +5906,6 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/w3af"
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/io.pyo
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/get_local_ip.pyo
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/file_lock.pyc
-/usr/local/pentos/apps/w3af/w3af/core/controllers/misc/is_source_file.py
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/is_private_site.pyc
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/factory.pyo
 /usr/local/pentos/apps/w3af/w3af/core/controllers/misc/group_by_min_key.py
@@ -6437,5 +6425,6 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/w3af"
 /usr/local/pentos/apps/w3af/profiles/empty_profile.pw3af
 /usr/local/pentos/apps/w3af/profiles/full_audit_spider_man.pw3af
 /usr/local/pentos/apps/w3af/profiles/OWASP_TOP10.pw3af
+/usr/local/pentos/apps/w3af/README.md
 
 %changelog

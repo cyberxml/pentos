@@ -61,15 +61,15 @@ yum -y update
 
 #ettercap
 #freedts
-ntfs-3g
-p7zip
-perl-NetPacket
+yum -y install ntfs-3g
+yum -y install p7zip
+yum -y install perl-NetPacket
 #perl-Net-RawIP
-python-oauth
-python-pip
-python-simplejson
+yum -y install python-oauth
+yum -y install python-pip
+yum -y install python-simplejson
 #python-simpleparse
-rkhunter
+yum -y install rkhunter
 
 # pen apps
 yum install clamav
@@ -79,3 +79,6 @@ yum install nikto
 #yum install masscan
 #yum install metasploit-framework
 #yum install openvas
+
+# for phantomjs
+yum -y install gperf

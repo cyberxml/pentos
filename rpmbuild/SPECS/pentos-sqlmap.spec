@@ -335,11 +335,9 @@ cp /opt/pentos/menu/pentos-sqlmap.desktop "$RPM_BUILD_ROOT/usr/share/application
 /usr/local/pentos/apps/sqlmap/extra/shutils
 /usr/local/pentos/apps/sqlmap/extra/shutils/pyflakes.sh
 /usr/local/pentos/apps/sqlmap/extra/shutils/pep8.sh
-/usr/local/pentos/apps/sqlmap/extra/shutils/precommit-hook
 /usr/local/pentos/apps/sqlmap/extra/shutils/regressiontest.py
 /usr/local/pentos/apps/sqlmap/extra/shutils/pylint.py
 /usr/local/pentos/apps/sqlmap/extra/shutils/blanks.sh
-/usr/local/pentos/apps/sqlmap/extra/shutils/postcommit-hook
 /usr/local/pentos/apps/sqlmap/extra/shutils/duplicates.py
 /usr/local/pentos/apps/sqlmap/extra/shellcodeexec
 /usr/local/pentos/apps/sqlmap/extra/shellcodeexec/linux
@@ -369,7 +367,6 @@ cp /opt/pentos/menu/pentos-sqlmap.desktop "$RPM_BUILD_ROOT/usr/share/application
 /usr/local/pentos/apps/sqlmap/xml
 /usr/local/pentos/apps/sqlmap/xml/errors.xml
 /usr/local/pentos/apps/sqlmap/xml/queries.xml
-/usr/local/pentos/apps/sqlmap/xml/sqlmap.xsd
 /usr/local/pentos/apps/sqlmap/xml/payloads
 /usr/local/pentos/apps/sqlmap/xml/payloads/stacked_queries.xml
 /usr/local/pentos/apps/sqlmap/xml/payloads/boolean_blind.xml
@@ -575,7 +572,6 @@ cp /opt/pentos/menu/pentos-sqlmap.desktop "$RPM_BUILD_ROOT/usr/share/application
 /usr/local/pentos/apps/sqlmap/lib/core/dicts.py
 /usr/local/pentos/apps/sqlmap/lib/core/dump.py
 /usr/local/pentos/apps/sqlmap/lib/core/common.py
-/usr/local/pentos/apps/sqlmap/lib/core/xmldump.py
 /usr/local/pentos/apps/sqlmap/lib/core/readlineng.py
 /usr/local/pentos/apps/sqlmap/lib/core/option.py
 /usr/local/pentos/apps/sqlmap/lib/core/agent.py

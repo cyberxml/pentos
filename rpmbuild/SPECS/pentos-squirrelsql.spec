@@ -29,8 +29,8 @@ cp /opt/pentos/menu/pentos-squirrel.desktop "$RPM_BUILD_ROOT/usr/share/applicati
 [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 
 %files
+#/usr/local/pentos/apps/squirrelsql/pentos-squirrelsql-3.7.tar.gz
 /usr/share/applications/pentos-squirrel.desktop
-/usr/local/pentos/apps/squirrelsql/pentos-squirrelsql-3.7.tar.gz
 /usr/local/pentos/apps/squirrelsql/squirrel-sql-3.7-standard.jar
 /usr/local/pentos/apps/squirrelsql/squirrelsql.sh
 
