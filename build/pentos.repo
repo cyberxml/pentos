@@ -1,6 +1,6 @@
 [pentos]
 name=PentOS-7
-baseurl=http://rhinohide.org/pentos/repo/$releasever/pentos/$basearch/
+baseurl=http://cyberxml.org/pentos/repo/$releasever/pentos/$basearch/
 gpgcheck=0
 enabled=0
 #gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
