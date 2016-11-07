@@ -72,8 +72,8 @@ yum -y install python-simplejson
 yum -y install rkhunter
 
 # pen apps
-yum install clamav
-yum install nikto
+yum -y install clamav
+yum -y install nikto
 #yum install john
 #yum install m2crypto
 #yum install masscan
