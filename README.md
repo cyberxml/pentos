@@ -239,15 +239,16 @@ If you are running in a VM, now is a good time to take a snapshot
 #####--------------------------------
 
 Login as 'penne'
+
 Open a terminal window
-enter: su -
-enter the root password
-enter: cd /opt
-enter: git clone http://github.com/cyberxml/pentos
-enter: cd /opt/pentos/build
-enter: ./pentos-build-1.sh
-enter: ./pentos-build-2.sh
-enter: ./pentos-build-3.sh
+ -      enter: su -
+ -      enter the root password
+ -      enter: cd /opt
+ -      enter: git clone http://github.com/cyberxml/pentos
+ -      enter: cd /opt/pentos/build
+ -      enter: ./pentos-build-1.sh
+ -      enter: ./pentos-build-2.sh
+ -      enter: ./pentos-build-3.sh
 
 #####--------------------------------
 ##### Build the PentOS Repository
