@@ -246,17 +246,19 @@ Open a terminal window
  -      enter: cd /opt
  -      enter: git clone http://github.com/cyberxml/pentos
  -      enter: cd /opt/pentos/build
- -      enter: ./pentos-build-1.sh
- -      enter: ./pentos-build-2.sh
- -      enter: ./pentos-build-3.sh
+ -      enter: ./pentos-build-1.sh # env config
+ -      enter: ./pentos-build-2.sh # yum installs
+ -      enter: ./pentos-build-3.sh # rpm installs
+ -      enter: ./pentos-build-4.sh # pip installs
+ -      enter: ./pentos-build-5.sh # manual installs
 
 #####--------------------------------
 ##### Build the PentOS Repository
 #####--------------------------------
-##### this is to build the PentOS repo
+##### this is to build the PentOS RPMs
 ##### you can skip this if you are just building the platform
 
-enter: ./pentos-build-4.sh
+enter: ./pentos-build-rpms.sh
 
 #####--------------------------------
 ##### Configure PentOS

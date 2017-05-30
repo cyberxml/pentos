@@ -1,27 +1,18 @@
-#----------------------------------
-# make pentos repo and rpms
-#----------------------------------
+pip install --upgrade pip
 
-mkdir /opt/pentos/rpmbuild/BUILD
-mkdir /opt/pentos/rpmbuild/BUILDROOT
-mkdir /opt/pentos/rpmbuild/RPMS
-mkdir /opt/pentos/rpmbuild/SOURCES
-mkdir /opt/pentos/rpmbuild/SOURCES/x86_64
-mkdir /opt/pentos/rpmbuild/SRPMS
-echo "%_topdir    /opt/pentos/rpmbuild" >> ~/.rpmmacros
+# something wrong with pip compile environment
+cp /usr/lib/python2.7/site-packages/packaging/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py-orig
+cp /opt/pentos/build/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py
 
-./pentos-rpmbuild-creddump.sh
-./pentos-rpmbuild-exploitdb.sh
-./pentos-rpmbuild-httpscreenshot.sh
-./pentos-build-john.sh
-#./pentos-rpmbuild-phantomjs.sh
-./pentos-rpmbuild-pil.sh
-./pentos-rpmbuild-responder.sh
-./pentos-rpmbuild-sqlmap.sh
-./pentos-rpmbuild-squirrelsql.sh
-./pentos-rpmbuild-w3af.sh
-./pentos-rpmbuild-zap.sh
+pip install binwalk
+pip install awsscout2
+pip install crackmapexec
+pip install autopwn
+pip install trueseeing
+pip install harvester
+pip install scrapy
+pip install sslyze
 
-# use createrepo to create repodata directory and files
-# use repo/7/pentos/x86_64 for path to rpms
-# copy files from /opt/pentos/rpmbuild/RPMS/x86_64
+# directory structure with multiple hooks
+pip install jarvis-pentest
+
