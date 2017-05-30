@@ -1,5 +1,5 @@
 # 
-release=2.5.0
+release=2.6.0
 
 # cleanup
 rm -rf /opt/pentos/rpmbuild/SOURCES/*ZAP*

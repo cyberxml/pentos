@@ -11,7 +11,7 @@ yum -y --enablerepo pentos install pentos-creddump
 # yum -y --enablerepo pentos install pentos-exploitdb
 yum -y --enablerepo pentos install pentos-httpscreenshot
 yum -y --enablerepo pentos install pentos-responder
-yum -y --enablerepo pentos install pentos-sqlmap
+#yum -y --enablerepo pentos install pentos-sqlmap
 
 mkdir /opt/pentos/apps
 mkdir /opt/pentos/apps/Perl-Net-RawIP

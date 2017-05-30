@@ -56,8 +56,15 @@ yum -y install wireshark-gnome
 
 #-- EPEL --
 
-rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
+REL=$(wget -O- http://dl.fedoraproject.org/pub/epel/7/x86_64/e/ 2>/dev/null | grep -Po 'epel-release-7-.*?noarch.rpm')
+wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/${REL} 
+rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/${REL}
 yum -y update
+
+yum install python-pip
+yum install python-pip34
+pip install --upgrade pip
+pip3 install --upgrade pip
 
 #ettercap
 #freedts
@@ -82,3 +89,27 @@ yum -y install nikto
 
 # for phantomjs
 yum -y install gperf
+
+yum -y install p0f
+yum -y install hping3
+
+yum -y install dnsenum
+yum -y install dnstop
+yum -y install dnsmap
+
+yum -y install lynis
+
+yum -y install reaver
+yum -y install rtl-sdr
+
+yum -y install thc-ipv6
+
+yum -y install dc3dd
+yum -y install ddrescue
+yum -y install extundelete
+yum -y install tcpxtract
+yum -y install CutyCapt
+
+yum -y install slowhttptest
+yum -y install hydra
+yum -y install hydra-frontend
