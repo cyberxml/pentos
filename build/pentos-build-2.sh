@@ -113,3 +113,5 @@ yum -y install CutyCapt
 yum -y install slowhttptest
 yum -y install hydra
 yum -y install hydra-frontend
+
+yum -y install scapy

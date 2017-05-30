@@ -1,12 +1,12 @@
 Name:           pentos-zap
-Version:        2.5.0
+Version:        2.6.0
 Release:        0
 Summary:        pentos-zap
 Group:          Applications/Other
 License:        GPL
-URL:            https://github.com/zaproxy/zaproxy/releases/download/2.4.3/ZAP_2.5.0_Linux.tar.gz
+URL:            https://github.com/zaproxy/zaproxy/releases/download/_release_/ZAP_release_Linux.tar.gz
 Vendor:         OWASP Zed Attack Proxy
-Source:         pentos-zap-2.5.0.tar.gz
+Source:         pentos-zap-2.6.0.tar.gz
 Prefix:         %{_prefix}
 Packager: 	cyberxml
 BuildRoot:      %{_tmppath}/%{name}-buildroot
@@ -31,13 +31,20 @@ cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 %files
 /usr/share/applications/pentos-zap.desktop
 /usr/local/pentos/apps/zap/README
+/usr/local/pentos/apps/zap/zap-2.6.0.jar
+/usr/local/pentos/apps/zap/zap.bat
+/usr/local/pentos/apps/zap/zap.ico
+/usr/local/pentos/apps/zap/zap.sh
+#/usr/local/pentos/apps/zap/debugsources.list
+#/usr/local/pentos/apps/zap/debugfiles.list
+#/usr/local/pentos/apps/zap/debuglinks.list
+#/usr/local/pentos/apps/zap/elfbins.list
 /usr/local/pentos/apps/zap/db/db.properties
 /usr/local/pentos/apps/zap/db/hsqldb.properties
 /usr/local/pentos/apps/zap/db/mysql.properties
 /usr/local/pentos/apps/zap/db/mysql.schema
 /usr/local/pentos/apps/zap/db/zapdb.properties
 /usr/local/pentos/apps/zap/db/zapdb.script
-/usr/local/pentos/apps/zap/filter/dummy.txt
 /usr/local/pentos/apps/zap/lang/Messages.properties
 /usr/local/pentos/apps/zap/lang/Messages_ar_SA.properties
 /usr/local/pentos/apps/zap/lang/Messages_az_AZ.properties
@@ -74,6 +81,7 @@ cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 /usr/local/pentos/apps/zap/lang/Messages_tr_TR.properties
 /usr/local/pentos/apps/zap/lang/Messages_uk_UA.properties
 /usr/local/pentos/apps/zap/lang/Messages_ur_PK.properties
+/usr/local/pentos/apps/zap/lang/Messages_vi_VN.properties
 /usr/local/pentos/apps/zap/lang/Messages_zh_CN.properties
 /usr/local/pentos/apps/zap/lang/vulnerabilities.xml
 /usr/local/pentos/apps/zap/lang/vulnerabilities_ar_SA.xml
@@ -111,11 +119,9 @@ cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 /usr/local/pentos/apps/zap/lang/vulnerabilities_tr_TR.xml
 /usr/local/pentos/apps/zap/lang/vulnerabilities_uk_UA.xml
 /usr/local/pentos/apps/zap/lang/vulnerabilities_ur_PK.xml
+/usr/local/pentos/apps/zap/lang/vulnerabilities_vi_VN.xml
 /usr/local/pentos/apps/zap/lang/vulnerabilities_zh_CN.xml
 /usr/local/pentos/apps/zap/lib/BrowserLauncher2-1_3.jar
-/usr/local/pentos/apps/zap/lib/JBroFuzz.jar
-/usr/local/pentos/apps/zap/lib/JBroFuzzEncoder.jar
-/usr/local/pentos/apps/zap/lib/ant.jar
 /usr/local/pentos/apps/zap/lib/bcmail-jdk15on-152.jar
 /usr/local/pentos/apps/zap/lib/bcpkix-jdk15on-152.jar
 /usr/local/pentos/apps/zap/lib/bcprov-jdk15on-152.jar
@@ -125,6 +131,7 @@ cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 /usr/local/pentos/apps/zap/lib/commons-configuration-1.9.jar
 /usr/local/pentos/apps/zap/lib/commons-csv-1.1.jar
 /usr/local/pentos/apps/zap/lib/commons-httpclient-3.1.jar
+/usr/local/pentos/apps/zap/lib/commons-io-2.4.jar
 /usr/local/pentos/apps/zap/lib/commons-jxpath-1.3.jar
 /usr/local/pentos/apps/zap/lib/commons-lang-2.6.jar
 /usr/local/pentos/apps/zap/lib/commons-logging-1.2.jar
@@ -135,7 +142,9 @@ cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 /usr/local/pentos/apps/zap/lib/hsqldb.jar
 /usr/local/pentos/apps/zap/lib/httpclient-4.5.jar
 /usr/local/pentos/apps/zap/lib/httpcore-4.4.1.jar
+/usr/local/pentos/apps/zap/lib/ice4j-1.0.jar
 /usr/local/pentos/apps/zap/lib/java-semver-0.8.0.jar
+/usr/local/pentos/apps/zap/lib/jcommon-1.0.23.jar
 /usr/local/pentos/apps/zap/lib/jdom.jar
 /usr/local/pentos/apps/zap/lib/jericho-html-3.1.jar
 /usr/local/pentos/apps/zap/lib/jfreechart-1.0.13.jar
@@ -157,29 +166,33 @@ cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 /usr/local/pentos/apps/zap/license/hsqldb_lic.txt
 /usr/local/pentos/apps/zap/license/hypersonic_lic.txt
 /usr/local/pentos/apps/zap/license/lgpl-3.0.txt
-/usr/local/pentos/apps/zap/log/dummy.txt
 /usr/local/pentos/apps/zap/plugin/Readme.txt
-/usr/local/pentos/apps/zap/plugin/alertFilters-beta-3.zap
-/usr/local/pentos/apps/zap/plugin/ascanrules-release-23.zap
-/usr/local/pentos/apps/zap/plugin/bruteforce-beta-5.zap
-/usr/local/pentos/apps/zap/plugin/coreLang-release-10.zap
-/usr/local/pentos/apps/zap/plugin/diff-beta-6.zap
+/usr/local/pentos/apps/zap/plugin/alertFilters-beta-4.zap
+/usr/local/pentos/apps/zap/plugin/ascanrules-release-26.zap
+/usr/local/pentos/apps/zap/plugin/bruteforce-beta-6.zap
+/usr/local/pentos/apps/zap/plugin/coreLang-release-11.zap
+/usr/local/pentos/apps/zap/plugin/diff-beta-7.zap
 /usr/local/pentos/apps/zap/plugin/directorylistv1-release-3.zap
-/usr/local/pentos/apps/zap/plugin/fuzz-beta-5.zap
-/usr/local/pentos/apps/zap/plugin/gettingStarted-release-5.zap
-/usr/local/pentos/apps/zap/plugin/help-release-6.zap
-/usr/local/pentos/apps/zap/plugin/invoke-beta-3.zap
-/usr/local/pentos/apps/zap/plugin/onlineMenu-release-4.zap
-/usr/local/pentos/apps/zap/plugin/pscanrules-release-16.zap
-/usr/local/pentos/apps/zap/plugin/quickstart-release-18.zap
+/usr/local/pentos/apps/zap/plugin/fuzz-beta-8.zap
+/usr/local/pentos/apps/zap/plugin/gettingStarted-release-6.zap
+/usr/local/pentos/apps/zap/plugin/help-release-7.zap
+/usr/local/pentos/apps/zap/plugin/invoke-beta-6.zap
+/usr/local/pentos/apps/zap/plugin/jxbrowser-alpha-2.zap
+/usr/local/pentos/apps/zap/plugin/jxbrowserlinux32-alpha-1.zap
+/usr/local/pentos/apps/zap/plugin/jxbrowserlinux64-alpha-1.zap
+/usr/local/pentos/apps/zap/plugin/onlineMenu-release-5.zap
+/usr/local/pentos/apps/zap/plugin/pscanrules-release-19.zap
+/usr/local/pentos/apps/zap/plugin/quickstart-release-19.zap
+/usr/local/pentos/apps/zap/plugin/replacer-beta-2.zap
 /usr/local/pentos/apps/zap/plugin/reveal-release-2.zap
 /usr/local/pentos/apps/zap/plugin/saverawmessage-release-3.zap
-/usr/local/pentos/apps/zap/plugin/scripts-beta-16.zap
-/usr/local/pentos/apps/zap/plugin/selenium-release-5.zap
-/usr/local/pentos/apps/zap/plugin/spiderAjax-release-15.zap
-/usr/local/pentos/apps/zap/plugin/tips-beta-5.zap
-/usr/local/pentos/apps/zap/plugin/websocket-release-11.zap
-/usr/local/pentos/apps/zap/plugin/zest-beta-21.zap
+/usr/local/pentos/apps/zap/plugin/scripts-beta-18.zap
+/usr/local/pentos/apps/zap/plugin/selenium-release-10.zap
+/usr/local/pentos/apps/zap/plugin/spiderAjax-release-17.zap
+/usr/local/pentos/apps/zap/plugin/tips-beta-6.zap
+/usr/local/pentos/apps/zap/plugin/webdriverlinux-beta-2.zap
+/usr/local/pentos/apps/zap/plugin/websocket-release-12.zap
+/usr/local/pentos/apps/zap/plugin/zest-beta-23.zap
 "/usr/local/pentos/apps/zap/scripts/templates/active/Active default template.js"
 "/usr/local/pentos/apps/zap/scripts/templates/authentication/Authentication default template.js"
 "/usr/local/pentos/apps/zap/scripts/templates/authentication/BodgeIt Store Authentication.js"
@@ -195,7 +208,6 @@ cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 "/usr/local/pentos/apps/zap/scripts/templates/targeted/Targeted default template.js"
 "/usr/local/pentos/apps/zap/scripts/templates/variant/Input Vector default template.js"
 "/usr/local/pentos/apps/zap/scripts/templates/variant/Input Vector sharp query separator.js"
-/usr/local/pentos/apps/zap/session/dummy.txt
 /usr/local/pentos/apps/zap/xml/alert.dtd
 /usr/local/pentos/apps/zap/xml/alert.xml
 /usr/local/pentos/apps/zap/xml/alertDef.dtd
@@ -210,6 +222,7 @@ cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 /usr/local/pentos/apps/zap/xml/internet-explorer-user-agents.txt
 /usr/local/pentos/apps/zap/xml/log4j.properties
 /usr/local/pentos/apps/zap/xml/report.html.xsl
+/usr/local/pentos/apps/zap/xml/report.md.xsl
 /usr/local/pentos/apps/zap/xml/report.xml.xsl
 /usr/local/pentos/apps/zap/xml/reportCompare.xsl
 /usr/local/pentos/apps/zap/xml/safari-user-agents.txt
@@ -218,9 +231,5 @@ cp /opt/pentos/menu/pentos-zap.desktop "$RPM_BUILD_ROOT/usr/share/applications"
 /usr/local/pentos/apps/zap/xml/session.xml
 /usr/local/pentos/apps/zap/xml/test.xml
 /usr/local/pentos/apps/zap/xml/untitledsession.xml
-/usr/local/pentos/apps/zap/zap-2.5.0.jar
-/usr/local/pentos/apps/zap/zap.bat
-/usr/local/pentos/apps/zap/zap.ico
-/usr/local/pentos/apps/zap/zap.sh
 
 %changelog
