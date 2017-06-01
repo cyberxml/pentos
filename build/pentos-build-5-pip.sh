@@ -1,4 +1,6 @@
+
 pip install --upgrade pip
+pip3 install --upgrade pip
 
 # something wrong with pip compile environment
 cp /usr/lib/python2.7/site-packages/packaging/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py-orig

@@ -246,11 +246,12 @@ Open a terminal window
  -      enter: cd /opt
  -      enter: git clone http://github.com/cyberxml/pentos
  -      enter: cd /opt/pentos/build
- -      enter: ./pentos-build-1.sh # env config
- -      enter: ./pentos-build-2.sh # yum installs
- -      enter: ./pentos-build-3.sh # rpm installs
- -      enter: ./pentos-build-4.sh # pip installs
- -      enter: ./pentos-build-5.sh # manual installs
+ -	pentos-build-1-env.sh
+ -	pentos-build-2-base.sh
+ -	pentos-build-3-epel.sh
+ -	pentos-build-4-rpm.sh
+ -	pentos-build-5-pip.sh
+ -	pentos-build-6-manual.sh
 
 #####--------------------------------
 ##### Build the PentOS Repository
@@ -258,17 +259,5 @@ Open a terminal window
 ##### this is to build the PentOS RPMs
 ##### you can skip this if you are just building the platform
 
-enter: ./pentos-build-rpms.sh
-
-#####--------------------------------
-##### Configure PentOS
-#####--------------------------------
-
-When prompted, enter a password different from the root password
-
-The command returns a password hash
-
-Copy the password-hash and enter the following line into /etc/grub.conf
-
-password --encrypted <password-hash>
+enter: ./pentos-build-9-repo.sh
 
