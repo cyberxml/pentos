@@ -3,7 +3,7 @@
 #------------------------
 
 # use the repo
-cp pentos.repo /etc/yums.repos.d
+cp pentos.repo /etc/yum.repos.d
 
 # yum -y --enablerepo pentos install "pentos-*"
 yum -y --enablerepo pentos install pentos-creddump

@@ -1,0 +1,2 @@
+ZAP | Tools > Options > Dynamic SSL Certificates > Save
+Firefox | Preferences > Advanced > Certificates > View Certificates > Authorities > Import
