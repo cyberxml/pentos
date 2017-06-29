@@ -1,0 +1,23 @@
+# https://github.com/BastienFaure/jarvis
+
+$ pentest start /path/to/pentest
+$ pentest init
+
+
+For using Jarvis, you will have to fill a /etc/jarvis.conf file:
+
+[jarvis]
+pentests_history = /home/user/.pentests_history
+user_directory = user
+output_directory = records
+img_directory = img
+pentest_tree = [
+        "%(user_directory)",
+        "%(user_directory)/img",
+        "%(user_directory)/scripts",
+        "%(user_directory)/records"
+        ]
+notesfiles = notes.txt
+interface = eth0
+editor = vim
+

@@ -16,5 +16,7 @@ pip install scrapy
 pip install sslyze
 
 # directory structure with multiple hooks
-pip install jarvis-pentest
+# need to test; nmap is failing
+#pip install jarvis-pentest
+#pip install jarvis
 
