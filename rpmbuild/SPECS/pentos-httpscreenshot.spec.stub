@@ -21,7 +21,10 @@ BuildRoot:      %{_tmppath}/%{name}-buildroot
 %description
 HTTPScreenshot is a tool for grabbing screenshots and HTML of large numbers of websites. The goal is for it to be both thorough and fast which can sometimes oppose each other.
 
+#%global debug_package %{nil}
+
 %prep
+
 %setup -q
 
 %build
@@ -30,7 +33,9 @@ HTTPScreenshot is a tool for grabbing screenshots and HTML of large numbers of w
 mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/httpscreenshot"
 mkdir -p "$RPM_BUILD_ROOT/usr/share/applications"
 cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/httpscreenshot"
+rm -rf "$RPM_BUILD_ROOT/usr/local/pentos/apps/httpscreenshot/Dockerfile"
 cp /opt/pentos/menu/pentos-httpscreenshot.desktop "$RPM_BUILD_ROOT/usr/share/applications"
+#exit 0
 
 %clean
 [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
@@ -41,12 +46,13 @@ cp /opt/pentos/menu/pentos-httpscreenshot.desktop "$RPM_BUILD_ROOT/usr/share/app
 /usr/local/pentos/apps/httpscreenshot/requirements.txt
 /usr/local/pentos/apps/httpscreenshot/masshttp.sh
 /usr/local/pentos/apps/httpscreenshot/screenshotClustering
-/usr/local/pentos/apps/httpscreenshot/screenshotClustering/cluster.py
-/usr/local/pentos/apps/httpscreenshot/screenshotClustering/popup.js
+#/usr/local/pentos/apps/httpscreenshot/screenshotClustering/cluster.py
+#/usr/local/pentos/apps/httpscreenshot/screenshotClustering/popup.js
 /usr/local/pentos/apps/httpscreenshot/README.md
 /usr/local/pentos/apps/httpscreenshot/LiberationSerif-BoldItalic.ttf
 /usr/local/pentos/apps/httpscreenshot/install-dependencies.sh
-# inserted at BUILDROOT
+#/usr/local/pentos/apps/httpscreenshot/Dockerfile
+# need to find solution that stops pre-compiling python but also allows debug files
 /usr/local/pentos/apps/httpscreenshot/httpscreenshot.pyc
 /usr/local/pentos/apps/httpscreenshot/httpscreenshot.pyo
 

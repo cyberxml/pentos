@@ -24,7 +24,7 @@ rm -rf /opt/pentos/rpmbuild/SOURCES/*pscreenshot*
 cd /opt/pentos/rpmbuild/SOURCES
 git clone https://github.com/breenmachine/httpscreenshot
 mv httpscreenshot pentos-httpscreenshot-${dt}
-tar --exclude='pentos-httpscreenshot-${dt}/.git' -czf pentos-httpscreenshot-${dt}.tar.gz pentos-httpscreenshot-${dt}
+tar --exclude='pentos-httpscreenshot-${dt}/.git' --exclude='pentos-httpscreenshot-${dt}/Dockerfile' -czf pentos-httpscreenshot-${dt}.tar.gz pentos-httpscreenshot-${dt}
 
 # prepare SPEC
 sed -e "s/YYYYDDD/${dt}/" /opt/pentos/rpmbuild/SPECS/pentos-httpscreenshot.spec.stub > /opt/pentos/rpmbuild/SPECS/pentos-httpscreenshot.spec

@@ -1,6 +1,7 @@
 #------------------------
 # pentos repo installs
 #------------------------
+mkdir /opt/pentos/apps
 
 # use the repo
 cp pentos.repo /etc/yum.repos.d

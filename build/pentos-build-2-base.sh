@@ -33,6 +33,7 @@ yum -y install postgresql-server
 yum -y install python-linux-procfs
 yum -y install python-matplotlib
 yum -y install python-tornado
+yum -y install qt-devel
 yum -y install rpmdevtools
 yum -y install rsh
 yum -y install scap-workbench

@@ -1,0 +1,30 @@
+Name:           pentos-w3af
+Version:        1.6.45
+Release:        0
+Summary:        pentos-w3af
+Group:          Applications/Other
+License:        GPL
+URL:            https://github.com/andresriancho/w3af
+Vendor:         Andres Riancho
+Source:         pentos-w3af-1.6.45.tar.gz
+Prefix:         %{_prefix}
+Packager: 	cyberxml
+BuildRoot:      %{_tmppath}/%{name}-buildroot
+
+%description
+w3af (web application attack and audit framework) is an open-source web application security scanner. The project provides a vulnerability scanner and exploitation tool for Web applications. It provides information about security vulnerabilities for use in penetration testing engagements. The scanner offers a graphical user interface and a command-line interface.
+
+%prep
+%setup -q
+
+%build
+
+%install
+mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/w3af"
+cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/w3af"
+
+%clean
+[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
+
+%files
+

@@ -5,8 +5,9 @@ wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/${REL}
 rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/${REL}
 yum -y update
 
-yum install python-pip
-yum install python-pip34
+yum -y install python-pip
+# what package did I think was here?
+yum -y install python34-pip
 
 #ettercap
 #freedts

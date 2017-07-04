@@ -1,0 +1,2 @@
+# by default, no mode is selected
+Top Right Hand Panel > Receiver Options > Mode > WFM (stereo)

@@ -1,0 +1,35 @@
+Name:           pentos-phantomjs
+Version:        2.1.1
+Release:        0
+Summary:        PhantomJS is a headless WebKit scriptable with JavaScript.
+Group:          Applications/Other
+License:        BSD
+URL:            https://phantomjs.org
+Vendor:         Ariya Hidayat
+Source:         pentos-phantomjs-2.1.1.tar.gz
+Prefix:         %{_prefix}
+Packager: 	cyberxml
+BuildRoot:      %{_tmppath}/%{name}-buildroot
+
+%description
+PhantomJS is a headless WebKit scriptable with JavaScript.
+- Headless web testing: Lightning-fast testing without the browser is now possible!
+- Page automation: Access and manipulate web pages with the standard DOM API, or with usual libraries like jQuery.
+- Screen capture: Programmatically capture web contents including CSS, SVG and Canvas. Build server-side web graphics apps, from a screenshot service to a vector chart rasterizer.
+- Network monitoring**. Automate performance analysis, track page loading and export as standard HAR form
+
+%prep
+
+%setup -q
+
+%build
+
+%install
+mkdir -p "$RPM_BUILD_ROOT/usr/local/pentos/apps/phantomjs"
+cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/phantomjs"
+
+%clean
+[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
+
+%files
+

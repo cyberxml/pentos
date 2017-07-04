@@ -2,6 +2,9 @@
 # aircrack
 #----------------------------------
 
+# prerequisite
+yum -y install libnl3 libnl3-devel
+
 # cleanup directory
 rm -rf /opt/pentos/rpmbuild/SOURCES/aircrack*
 rm -rf /opt/pentos/rpmbuild/SOURCES/pentos-aircrack*
