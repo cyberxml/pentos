@@ -1,0 +1,32 @@
+Name:           pentos-wxtoimg
+Version:        2.10.11
+Release:        1
+Summary:        software to decode APT and WEFAX signals from weather satellites
+Group:          Applications/Other
+License:        None
+URL:            http://www.wxtoimg.com 
+Vendor:         http://www.wxtoimg.com 
+Source:         pentos-wxtoimg-2.10.11.tar.gz
+Prefix:         %{_prefix}
+Packager: 	cyberxml
+BuildRoot:      %{_tmppath}/%{name}-buildroot
+
+%description
+The world's best weather satellite (WXsat) signal to image decoder.
+
+#%global debug_package %{nil}
+
+%prep
+
+%setup -q
+
+%build
+
+%install
+cp -R * "$RPM_BUILD_ROOT"
+
+%clean
+[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
+
+%files
+

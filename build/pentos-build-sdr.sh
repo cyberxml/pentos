@@ -2,6 +2,8 @@ yum -y install cmake
 # the following adds 750MB, figure out how to trim it
 yum -y install qt5-* 
 yum -y install pulseaudio-*
+yum -y install gpredict
+yum -y install audacity
 
 # --------------------------
 # install rtl-sdr software
@@ -17,6 +19,7 @@ yum install fftw fftw-devel
 wget https://github.com/mossmann/hackrf/releases/download/v2017.02.1/hackrf-2017.02.1.tar.xz
 tar xvJf hackrf-2017.02.1.tar.xz
 cd hackrf-2017.02.1
+cd host
 mkdir build
 cd build
 cmake ..
@@ -127,6 +130,18 @@ make
 cp rtl_ais /usr/local/bin
 
 # --------------------------
+# rtl_biast
+# --------------------------
+cd /opt/pentos/apps
+git clone https://github.com/rtlsdrblog/rtl_biast
+cd rtl-biast
+mkdir build
+cd build
+cmake ..
+make
+cp src/rtl_biast /usr/local/bin
+
+# --------------------------
 # gnss-sdr
 # --------------------------
 ln -s /bin/aclocal /usr/bin/aclocal-1.15
@@ -136,7 +151,44 @@ git clone https://github.com/gnss-sdr/gnss-sdr
 cd gnss-sdr
 cd build
 cmake ..
+make
 
+# --------------------------
+# Xastir
+# --------------------------
+yum -y install motif-devel
+cd /opt/pentos/apps
+git clone https://github.com/Xastir/Xastir
+cd Xastir
+./bootstraph.sh
+mkdir build
+cd build
+../configure
+make
+make install
+
+# --------------------------
+# multimon-ng
+# --------------------------
+cd /opt/pentos/apps
+git clone https://github.com/EliasOenal/multimon-ng
+cd multimon-ng
+mkdir build
+cd build
+qmake-qt4 ../multimon-ng.pro
+make
+make install
+
+
+# --------------------------
+# freqwatch
+# --------------------------
+cd /opt/pentos/apps
+git clone https://github.com/covertcodes/freqwatch
+cd freqwatch
+python setup.py make
+python setup.py install
+# will need to do some mysql configuration
 
 # Description - Mode 			Frequency
 # 12m Amateur Radio (AM/FM/CW/USB/LSB) 	24.890 - 24.990MHz

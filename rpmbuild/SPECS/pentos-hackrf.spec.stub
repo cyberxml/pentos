@@ -1,0 +1,32 @@
+Name:           pentos-hackrf
+Version:        2017.02.1
+Release:        0
+Summary:        HackRF is a project to produce a low cost, open source software radio platform
+Group:          Applications/Other
+License:        GPL
+URL:            https://github.com/mossmann/hackrf
+Vendor:         Michael Ossmann mike@ossmann.com
+Source:         pentos-hackrf-2017.02.1.tar.gz
+Prefix:         %{_prefix}
+Packager: 	cyberxml
+BuildRoot:      %{_tmppath}/%{name}-buildroot
+
+%description
+HackRF is a project to produce a low cost, open source software radio platform
+
+#%global debug_package %{nil}
+
+%prep
+
+%setup -q
+
+%build
+
+%install
+cp -R * "$RPM_BUILD_ROOT"
+
+%clean
+[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
+
+%files
+

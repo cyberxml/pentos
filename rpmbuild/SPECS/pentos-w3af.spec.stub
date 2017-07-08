@@ -1,7 +1,7 @@
 Name:           pentos-w3af
 Version:        1.6.45
 Release:        0
-Summary:        pentos-w3af
+Summary:        Web Application Attack and Audit Framework
 Group:          Applications/Other
 License:        GPL
 URL:            https://github.com/andresriancho/w3af

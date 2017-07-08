@@ -1,0 +1,56 @@
+http://forums.fedoraforum.org/showthread.php?t=244290
+
+I took a crash course on pulseaudio right now LoL
+
+Here is the loopback solutions I found:
+
+Quote:
+pactl load-module module-loopback
+This one have some options is there is some lag or something you just need to add the:
+
+latency_msec=[value here]
+
+Source:
+http://pulseaudio.org/wiki/Modules#module-loopback
+
+The other way is a hack:
+
+Quote:
+pacat -r -d alsa_input.pci-0000_00_1b.0.analog-stereo | pacat -p -d alsa_output.pci-0000_00_1b.0.analog-surround-71
+The syntax is pacat -r(ecord) -d(evice) [source] | pacat -p(lay) -d(evice) [sink]
+
+This one lags a lot.
+
+---------- Post added at 11:56 PM CDT ---------- Previous post was at 11:51 PM CDT ----------
+
+Looking up the monitors names:
+Quote:
+pactl list | grep -A2 'Source #' | grep 'Name: .*\.monitor$' | cut -d" " -f2
+Looking up sources:
+Quote:
+pactl list | grep -A2 'Source #' | grep 'Name: ' | cut -d" " -f2
+Looking up sinks:
+Quote:
+pactl list | grep -A2 'Sink #' | grep 'Name: ' | cut -d" " -f2
+Source:
+http://pulseaudio.org/wiki/FAQ#Iwant...edhowdoIdothis
+
+---------- Post added 2010-04-25 at 12:18 AM CDT ---------- Previous post was 2010-04-24 at 11:56 PM CDT ----------
+
+To unload the module for any reason you need to get the index and pass it to pactl.
+
+Code:
+
+$ pacmd list-modules
+index: 27
+	name: <module-loopback>
+	argument: <source=alsa_input.pci-0000_00_1b.0.analog-stereo sink=alsa_output.pci-0000_00_1b.0.analog-surround-71 latency_msec=200>
+	used: -1
+	load once: no
+	properties:
+		module.author = "Pierre-Louis Bossart"
+		module.description = "Loopback from source to sink"
+		module.version = "0.9.21"
+
+Quote:
+$ pactl unload-module 27 

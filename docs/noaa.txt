@@ -1,0 +1,1 @@
+http://www.teske.net.br/lucas/2016/02/recording-noaa-apt-signals-with-gqrx-and-rtl-sdr-on-linux/
