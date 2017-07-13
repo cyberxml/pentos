@@ -1,6 +1,8 @@
 
 pip install --upgrade --trusted-host pypi.python.org pip
-pip3 install --upgrade --trusted-host pypi.python.org pip
+pip install --upgrade setuptools
+#pip3 install --upgrade --trusted-host pypi.python.org pip
+#pip3 install --upgrade setuptools
 
 # something wrong with pip compile environment
 cp /usr/lib/python2.7/site-packages/packaging/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py-orig

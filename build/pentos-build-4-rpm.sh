@@ -25,17 +25,3 @@ yum -y --enablerepo pentos install pentos-w3af
 yum -y --enablerepo pentos install pentos-zap
 yum -y --enablerepo pentos install PIL
 
-#------------------------
-# manual installs
-#------------------------
-
-./pentos-build-john.sh
-./pentos-build-masscan.sh
-./pentos-build-metasploit.sh
-
-#./pentos-build-openvas.sh
-#yum install openvas
-# this is messed up. Not build.py in current 
-#./pentos-rpmbuild-phantomjs.sh
-#>> ./pentos-build-rat.sh
-#>> ./pentos-build-veil.sh
