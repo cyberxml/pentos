@@ -8,6 +8,7 @@ yum -y install libsmi
 yum -y install lynx
 yum -y install mariadb
 yum -y install mariadb-devel
+yum -y install mariadb-server
 yum -y install mutt
 yum -y install net-snmp
 yum -y install net-snmp-utils
@@ -55,6 +56,7 @@ yum -y install tokyocabinet
 yum -y install urlview
 yum -y install wireshark
 yum -y install wireshark-gnome
+yum -y install whois
 
 
 yum -y install rtl-sdr rtl-sdr-devel kalibrate-rtl libosmo-dsp

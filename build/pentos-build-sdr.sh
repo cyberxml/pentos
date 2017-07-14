@@ -183,12 +183,70 @@ make install
 # --------------------------
 # freqwatch
 # --------------------------
+yum -y install gpsd-devel
+ln -s /usr/include/libusb-1.0/libusb.h /usr/include/libusb.h
+ln -s /usr/lib64/mysql/libmysqlclient.so /usr/lib64/libmysqlclient.so
 cd /opt/pentos/apps
 git clone https://github.com/covertcodes/freqwatch
 cd freqwatch
 python setup.py make
 python setup.py install
 # will need to do some mysql configuration
+
+# --------------------------
+# acarsdec
+# --------------------------
+yum -y install alsa-libs-devel
+yum -y install libsndfile-devel
+git clone
+cd acrasdec
+make
+
+
+# --------------------------
+# sdrtrunk
+# --------------------------
+# install downloaded Oracle Java 8 JDK
+yum -y install ant
+yum localinstall jdk-8u131-linux-x64.rpm
+# run alternatives to set java and javac to oracle
+git clone https://github.com/DSheirer/sdrtrunk
+cd sdrtrunk
+cd build
+ant
+cd ../product
+unzip sdrtrunk_0.3.0-beta12.zip
+cd sdrtrunk
+chmod +x run_sdrtrunk_linux.sh
+# to test
+# ./run_sdrtrunk_linux.sh
+
+# --------------------------
+# JMBE: Java IMBE
+# --------------------------
+cd /opt/pentos/app
+git clone https://github.com/DSheirer/jmbe
+cd jmbe
+cd jmbe
+cd build
+ant
+cd ..
+cd library
+cp jmbe-0.3.3.jar /opt/pentos/apps/sdrtrunk/product/sdrtrunk/libs
+
+# --------------------------
+# minimodem
+# --------------------------
+cd /opt/pentos/app
+git clone https://github.com/kamalmostafa/minimodem
+cd minimodem
+autoreconf -i
+./configure
+make
+make install
+
+
+
 
 # Description - Mode 			Frequency
 # 12m Amateur Radio (AM/FM/CW/USB/LSB) 	24.890 - 24.990MHz
