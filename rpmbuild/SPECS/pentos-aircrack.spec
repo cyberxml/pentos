@@ -38,6 +38,7 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/aircrack-ng"
 /usr/local/pentos/apps/aircrack-ng/bin/aircrack-ng
 /usr/local/pentos/apps/aircrack-ng/bin/airdecap-ng
 /usr/local/pentos/apps/aircrack-ng/bin/airdecloak-ng
+/usr/local/pentos/apps/aircrack-ng/bin/airodump-ng
 /usr/local/pentos/apps/aircrack-ng/bin/airodump-ng-oui-update
 /usr/local/pentos/apps/aircrack-ng/bin/besside-ng-crawler
 /usr/local/pentos/apps/aircrack-ng/bin/ivstools
