@@ -18,3 +18,6 @@ combine with corkscrew in first step to drill through corporate proxy
 
 iodine: dns exfil/c2
 
+
+tcpping
+
