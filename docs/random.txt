@@ -15,3 +15,6 @@ on b: ssh -p 2006 userA@localhost
 
 combine with corkscrew in first step to drill through corporate proxy
 
+
+iodine: dns exfil/c2
+
