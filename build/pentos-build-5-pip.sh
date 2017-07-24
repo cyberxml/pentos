@@ -8,7 +8,9 @@ pip install --upgrade setuptools
 cp /usr/lib/python2.7/site-packages/packaging/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py-orig
 cp /opt/pentos/build/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py
 
-pip install --trusted-host pypi.python.org binwalk
+# pypi binwalk is outdated
+#pip install --trusted-host pypi.python.org binwalk
+
 pip install --trusted-host pypi.python.org incremental
 pip install --trusted-host pypi.python.org awsscout2
 pip install --trusted-host pypi.python.org crackmapexec

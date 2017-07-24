@@ -7,6 +7,7 @@ yum -y install agg
 yum -y install aide
 yum -y install fltk
 yum -y install ftp
+yum -y install gimp
 yum -y install graphviz
 yum -y install irssi
 yum -y install libsmi

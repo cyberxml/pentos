@@ -20,3 +20,14 @@ cd /opt/pentos/build
 #./pentos-rpmbuild-phantomjs.sh
 #>> ./pentos-build-rat.sh
 #>> ./pentos-build-veil.sh
+
+#------------------------
+# binwalk
+#------------------------
+cd /opt/pentos/apps
+wget https://github.com/devttys0/binwalk/archive/master.zip
+unzip master-zip
+cd binwalk-master
+python setup.py install
+
+

@@ -1,16 +1,61 @@
-yum -y install gimp
-yum -y install autopsy
+
+# ------------------------
+# featherduster
+# ------------------------
+cd /opt/pentos/apps
+yum -y install gmp gmp-devel
+yum -y install ncurses ncurses-devel
+git clone https://github.com/nccgroup/featherduster
+cd featherduster
+python setup.py install
 
 
-# build sdr
-yum -y install cmake
-sudo yum install libusb1-devel libusb-devel qt5-qtbase-devel python-cheetah boost148-devel bzip2-libs boost-thread.x86_64 boost148-thread.x86_64 gcc-c++
-yum install cppunit cppunit-devel
-yum install boost boost-devel
-pip install Cheetah
+# ------------------------
+# pkcrack
+# ------------------------
+cd /opt/pentos/apps
+wget https://www.unix-ag.uni-kl.de/%7Econrad/krypto/pkcrack/pkcrack-1.2.2.tar.gz
+tar xvzf pkcrack-1.2.2.tar.gz
+cd pkcrack-1.2.2
+cd src
+make
 
-wget 
-cd 
-mkdir build
-cd build
-cmake ../
+# ------------------------
+# pkcrack
+# ------------------------
+cd /opt/pentos/apps
+git clone https://github.com/ius/rsatool
+cd rsatool
+python setup.py install
+
+# ------------------------
+# xortool
+# ------------------------
+cd /opt/pentos/apps
+git clone https://github.com/hellman/xortool
+cd xortool
+python setup.py install
+
+# ------------------------
+# hashcat
+# ------------------------
+cd /opt/pentos/apps
+wget https://hashcat.net/files/hashcat-3.6.0.7z
+7za x hashcat-3.6.0
+cd hashcat-3.6.0
+
+# ------------------------
+# hydra
+# ------------------------
+cd /opt/pentos/apps
+wget https://github.com/vanhauser-thc/thc-hydra/archive/8.6.tar.gz
+tar xvzf 8.6.tar.gz
+cd thc-hydra-8.6
+./configure
+make
+make install
+
+
+
+
+
