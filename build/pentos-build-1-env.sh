@@ -12,5 +12,5 @@ echo "penne    ALL=(ALL)       ALL" >> /etc/sudoers
 echo "%pentester ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
 # disable SELinux for OPENVAS
-sed -i -e 's@^SELINUX=.*$@SELINUX=disabled@' /etc/selinux/config
-setenforce 0
+#sed -i -e 's@^SELINUX=.*$@SELINUX=disabled@' /etc/selinux/config
+#setenforce 0

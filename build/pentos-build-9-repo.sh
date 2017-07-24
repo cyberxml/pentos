@@ -16,7 +16,8 @@ echo "%_topdir    /opt/pentos/rpmbuild" >> ~/.rpmmacros
 ./pentos-rpmbuild-httpscreenshot.sh
 ./pentos-build-john.sh
 ./pentos-rpmbuild-phantomjs.sh
-./pentos-rpmbuild-pil.sh
+# python-pillow
+#./pentos-rpmbuild-pil.sh
 ./pentos-rpmbuild-responder.sh
 ./pentos-rpmbuild-sqlmap.sh
 ./pentos-rpmbuild-squirrelsql.sh

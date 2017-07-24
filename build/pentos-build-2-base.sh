@@ -1,3 +1,8 @@
+
+systemctl stop packagekit.service
+
+yum -y update
+
 yum -y install agg
 yum -y install aide
 yum -y install fltk
@@ -34,6 +39,7 @@ yum -y install php-xmlrpc
 yum -y install postgresql-server
 yum -y install python-linux-procfs
 yum -y install python-matplotlib
+yum -y install python-pillow
 yum -y install python-tornado
 yum -y install qt-devel
 yum -y install rpmdevtools
