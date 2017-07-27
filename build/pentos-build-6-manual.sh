@@ -25,9 +25,9 @@ cd /opt/pentos/build
 # binwalk
 #------------------------
 cd /opt/pentos/apps
-wget https://github.com/devttys0/binwalk/archive/master.zip
-unzip master-zip
-cd binwalk-master
+https://github.com/devttys0/binwalk/archive/v2.1.1.tar.gz
+tar xvzf v2.1.1.tar.gz
+cd binwalk-2.1.1
 python setup.py install
 
 

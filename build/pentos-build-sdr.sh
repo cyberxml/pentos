@@ -7,6 +7,13 @@ yum -y install pulseaudio-*
 yum -y install gpredict
 yum -y install audacity
 yum -y install vlc
+yum -y install pandoc
+
+
+# --------------------------
+# tecla
+# --------------------------
+wget https://copr.fedorainfracloud.org/coprs/madcat/tecla/repo/fedora-26/madcat-tecla-fedora-26.repo
 
 # --------------------------
 # install rtl-sdr software
@@ -82,7 +89,7 @@ yum -y install cppunit cppunit-devel
 yum -y install boost boost-devel
 yum -y install thrift thrift-devel
 yum -y install python-sphinx
-pip -y install Cheetah
+pip install Cheetah
 yum -y install gsl gsl-devel
 pip -y install pygsl
 yum -y install uhd uhd-devel
@@ -163,6 +170,7 @@ cp src/rtl_biast /usr/local/bin
 ln -s /bin/aclocal /usr/bin/aclocal-1.15
 yum -y install lapack lapack-devel
 yum -y install armadillo armadillo-devel
+yum -y install python-mako
 cd /opt/pentos/apps
 git clone https://github.com/gnss-sdr/gnss-sdr
 cd gnss-sdr
@@ -238,9 +246,8 @@ cd sdrtrunk
 cd build
 ant
 cd ../product
-unzip sdrtrunk_0.3.0-beta13.zip
+tar xvzf sdrtrunk_0.3.0-beta13.tgz
 cd sdrtrunk
-chmod +x run_sdrtrunk_linux.sh
 # to test
 # ./run_sdrtrunk_linux.sh
 
@@ -269,6 +276,16 @@ make
 make install
 
 
+# --------------------------
+# rtl_433
+# --------------------------
+cd /opt/pentos/apps
+git clone https://github.com/merbanan/rtl_433
+cd rtl_433/
+autoreconf --install
+./configure
+make
+make install
 
 
 # Description - Mode 			Frequency
@@ -288,10 +305,10 @@ make install
 # https://en.wikipedia.org/wiki/Advanced_Train_Control_System
 # The RF segment operates at 4800 bits per second in the 900 MHZ radio band
 # http://www.atcsmon.com/frequencies.html
-Channel 	MCP (MHz) 	BCP (MHz) 	Predominant User
-1 	896.8875 	935.8875 	Union Pacific
-2 	896.9375 	935.9375 	CSX
-3 	896.9875 	935.9875 	Shared ATCS Network
-4 	897.8875 	936.8875 	BNSF
-5 	897.9375 	936.9375 	Norfolk Southern
-6 	897.9875 	936.9875 	Southern Pacific
+#Channel 	MCP (MHz) 	BCP (MHz) 	Predominant User
+#1 	896.8875 	935.8875 	Union Pacific
+#2 	896.9375 	935.9375 	CSX
+#3 	896.9875 	935.9875 	Shared ATCS Network
+#4 	897.8875 	936.8875 	BNSF
+#5 	897.9375 	936.9375 	Norfolk Southern
+#6 	897.9875 	936.9875 	Southern Pacific

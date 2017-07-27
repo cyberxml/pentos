@@ -3,13 +3,20 @@ systemctl stop packagekit.service
 
 yum -y update
 
+# fedora 26
+# C Development Tools and Libraries
+
 yum -y install agg
 yum -y install aide
+yum -y install comedilib
+yum -y install comedilib-devel
 yum -y install fltk
 yum -y install ftp
 yum -y install gimp
 yum -y install graphviz
 yum -y install irssi
+yum -y install jack-audio-connection-kit
+yum -y install jack-audio-connection-kit-devel
 yum -y install libsmi
 yum -y install lynx
 yum -y install mariadb
@@ -22,6 +29,8 @@ yum -y install nmap
 yum -y install openldap-clients
 yum -y install openscap-utils
 yum -y install openssh-askpass
+yum -y install orc
+yum -y install orc-devel
 yum -y install perl-Authen-SASL
 yum -y install perl-Convert-ASN1
 yum -y install perl-Digest-HMAC
@@ -37,16 +46,21 @@ yum -y install php-pgsql
 yum -y install php-snmp
 yum -y install php-soap
 yum -y install php-xmlrpc
+yum -y install portaudio
+yum -y install portaudio-devel
 yum -y install postgresql-server
 yum -y install python-linux-procfs
 yum -y install python-matplotlib
 yum -y install python-pillow
 yum -y install python-tornado
 yum -y install qt-devel
+yum -y install qwt
+yum -y install qwt-devel
 yum -y install rpmdevtools
 yum -y install rsh
 yum -y install scap-workbench
 yum -y install scipy
+yum -y install swig
 yum -y install telnet
 yum -y install texlive-base
 yum -y install texlive-dvipng-bin
@@ -64,6 +78,7 @@ yum -y install urlview
 yum -y install wireshark
 yum -y install wireshark-gnome
 yum -y install whois
+yum -y install wxPython wxPython-devel
 
 
 yum -y install rtl-sdr rtl-sdr-devel kalibrate-rtl libosmo-dsp
