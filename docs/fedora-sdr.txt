@@ -1,0 +1,111 @@
+[root@f26 bin]# dnf -y install gqrx
+Failed to synchronize cache for repo 'copr.fedorainfracloud.org_coprs_madcat_tecla_repo_fedora-26_madcat-tecla-fedora-26.rep', disabling.
+Last metadata expiration check: 1:20:08 ago on Thu 27 Jul 2017 11:09:14 AM PDT.
+Dependencies resolved.
+=======================================================================================================================================================
+ Package                                 Arch                     Version                                               Repository                Size
+=======================================================================================================================================================
+Installing:
+ gqrx                                    x86_64                   2.6.1-4.fc26                                          fedora                   597 k
+Installing dependencies:
+ PyQwt                                   x86_64                   5.2.0-35.fc26                                         fedora                   433 k
+ freeglut                                x86_64                   3.0.0-4.fc26                                          fedora                   187 k
+ gnuradio                                x86_64                   3.7.11-1.fc26                                         fedora                    14 M
+ gr-fcdproplus                           x86_64                   0-0.27.20140920git1edbe523.fc26                       fedora                   103 k
+ gr-iqbal                                x86_64                   0.37.2-24.fc26                                        fedora                   112 k
+ gr-osmosdr                              x86_64                   0.1.4-2.20170221git2a2236cc.fc26                      fedora                   455 k
+ hackrf                                  x86_64                   2015.07.2-3.fc26                                      fedora                    49 k
+ hidapi                                  x86_64                   0.8.0-0.3.d17db57.fc26                                fedora                    41 k
+ python-beautifulsoup4                   noarch                   4.6.0-1.fc26                                          fedora                   175 k
+ python-cheetah                          x86_64                   2.4.4-14.fc26                                         fedora                   345 k
+ python2-cssselect                       noarch                   0.9.2-4.fc26                                          fedora                    38 k
+ python2-html5lib                        noarch                   1:0.999-13.fc26                                       fedora                   211 k
+ python2-lxml                            x86_64                   3.7.2-2.fc26                                          fedora                   1.0 M
+ python2-pyopengl                        x86_64                   3.1.1a1-7.fc26                                        fedora                   2.3 M
+ qwt5-qt4                                x86_64                   5.2.2-30.fc26                                         fedora                   292 k
+
+Transaction Summary
+=======================================================================================================================================================
+Install  16 Packages
+
+Total download size: 20 M
+Installed size: 133 M
+Downloading Packages:
+(1/16): gqrx-2.6.1-4.fc26.x86_64.rpm                                                                                   344 kB/s | 597 kB     00:01    
+(2/16): gr-osmosdr-0.1.4-2.20170221git2a2236cc.fc26.x86_64.rpm                                                         185 kB/s | 455 kB     00:02    
+(3/16): python2-lxml-3.7.2-2.fc26.x86_64.rpm                                                                           1.2 MB/s | 1.0 MB     00:00    
+(4/16): gr-fcdproplus-0-0.27.20140920git1edbe523.fc26.x86_64.rpm                                                       580 kB/s | 103 kB     00:00    
+(5/16): gr-iqbal-0.37.2-24.fc26.x86_64.rpm                                                                             604 kB/s | 112 kB     00:00    
+(6/16): freeglut-3.0.0-4.fc26.x86_64.rpm                                                                               186 kB/s | 187 kB     00:01    
+(7/16): python-beautifulsoup4-4.6.0-1.fc26.noarch.rpm                                                                  553 kB/s | 175 kB     00:00    
+(8/16): python2-cssselect-0.9.2-4.fc26.noarch.rpm                                                                      269 kB/s |  38 kB     00:00    
+(9/16): python2-html5lib-0.999-13.fc26.noarch.rpm                                                                      681 kB/s | 211 kB     00:00    
+(10/16): hackrf-2015.07.2-3.fc26.x86_64.rpm                                                                            319 kB/s |  49 kB     00:00    
+(11/16): hidapi-0.8.0-0.3.d17db57.fc26.x86_64.rpm                                                                      300 kB/s |  41 kB     00:00    
+(12/16): python-cheetah-2.4.4-14.fc26.x86_64.rpm                                                                       1.1 MB/s | 345 kB     00:00    
+(13/16): PyQwt-5.2.0-35.fc26.x86_64.rpm                                                                                994 kB/s | 433 kB     00:00    
+(14/16): qwt5-qt4-5.2.2-30.fc26.x86_64.rpm                                                                             694 kB/s | 292 kB     00:00    
+(15/16): python2-pyopengl-3.1.1a1-7.fc26.x86_64.rpm                                                                    379 kB/s | 2.3 MB     00:06    
+(16/16): gnuradio-3.7.11-1.fc26.x86_64.rpm                                                                             874 kB/s |  14 MB     00:16    
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                  1.2 MB/s |  20 MB     00:17     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                               1/1 
+  Installing       : qwt5-qt4-5.2.2-30.fc26.x86_64                                                                                                1/16 
+  Running scriptlet: qwt5-qt4-5.2.2-30.fc26.x86_64                                                                                                1/16 
+  Installing       : PyQwt-5.2.0-35.fc26.x86_64                                                                                                   2/16 
+  Installing       : python-cheetah-2.4.4-14.fc26.x86_64                                                                                          3/16 
+  Installing       : hidapi-0.8.0-0.3.d17db57.fc26.x86_64                                                                                         4/16 
+  Running scriptlet: hidapi-0.8.0-0.3.d17db57.fc26.x86_64                                                                                         4/16 
+  Installing       : hackrf-2015.07.2-3.fc26.x86_64                                                                                               5/16 
+  Running scriptlet: hackrf-2015.07.2-3.fc26.x86_64                                                                                               5/16 
+  Installing       : python2-html5lib-1:0.999-13.fc26.noarch                                                                                      6/16 
+  Installing       : python2-cssselect-0.9.2-4.fc26.noarch                                                                                        7/16 
+  Installing       : python-beautifulsoup4-4.6.0-1.fc26.noarch                                                                                    8/16 
+  Installing       : python2-lxml-3.7.2-2.fc26.x86_64                                                                                             9/16 
+  Installing       : freeglut-3.0.0-4.fc26.x86_64                                                                                                10/16 
+  Running scriptlet: freeglut-3.0.0-4.fc26.x86_64                                                                                                10/16 
+  Installing       : python2-pyopengl-3.1.1a1-7.fc26.x86_64                                                                                      11/16 
+  Installing       : gnuradio-3.7.11-1.fc26.x86_64                                                                                               12/16 
+  Running scriptlet: gnuradio-3.7.11-1.fc26.x86_64                                                                                               12/16 
+  Installing       : gr-fcdproplus-0-0.27.20140920git1edbe523.fc26.x86_64                                                                        13/16 
+  Running scriptlet: gr-fcdproplus-0-0.27.20140920git1edbe523.fc26.x86_64                                                                        13/16 
+  Installing       : gr-iqbal-0.37.2-24.fc26.x86_64                                                                                              14/16 
+  Running scriptlet: gr-iqbal-0.37.2-24.fc26.x86_64                                                                                              14/16 
+  Installing       : gr-osmosdr-0.1.4-2.20170221git2a2236cc.fc26.x86_64                                                                          15/16 
+  Running scriptlet: gr-osmosdr-0.1.4-2.20170221git2a2236cc.fc26.x86_64                                                                          15/16 
+  Installing       : gqrx-2.6.1-4.fc26.x86_64                                                                                                    16/16 
+  Running scriptlet: gqrx-2.6.1-4.fc26.x86_64                                                                                                    16/16 
+  Running scriptlet: gnuradio-3.7.11-1.fc26.x86_64                                                                                               16/16 
+  Running scriptlet: gqrx-2.6.1-4.fc26.x86_64                                                                                                    16/16 
+  Verifying        : gqrx-2.6.1-4.fc26.x86_64                                                                                                     1/16 
+  Verifying        : gnuradio-3.7.11-1.fc26.x86_64                                                                                                2/16 
+  Verifying        : gr-osmosdr-0.1.4-2.20170221git2a2236cc.fc26.x86_64                                                                           3/16 
+  Verifying        : python2-lxml-3.7.2-2.fc26.x86_64                                                                                             4/16 
+  Verifying        : python2-pyopengl-3.1.1a1-7.fc26.x86_64                                                                                       5/16 
+  Verifying        : gr-fcdproplus-0-0.27.20140920git1edbe523.fc26.x86_64                                                                         6/16 
+  Verifying        : gr-iqbal-0.37.2-24.fc26.x86_64                                                                                               7/16 
+  Verifying        : freeglut-3.0.0-4.fc26.x86_64                                                                                                 8/16 
+  Verifying        : python-beautifulsoup4-4.6.0-1.fc26.noarch                                                                                    9/16 
+  Verifying        : python2-cssselect-0.9.2-4.fc26.noarch                                                                                       10/16 
+  Verifying        : python2-html5lib-1:0.999-13.fc26.noarch                                                                                     11/16 
+  Verifying        : hackrf-2015.07.2-3.fc26.x86_64                                                                                              12/16 
+  Verifying        : hidapi-0.8.0-0.3.d17db57.fc26.x86_64                                                                                        13/16 
+  Verifying        : python-cheetah-2.4.4-14.fc26.x86_64                                                                                         14/16 
+  Verifying        : PyQwt-5.2.0-35.fc26.x86_64                                                                                                  15/16 
+  Verifying        : qwt5-qt4-5.2.2-30.fc26.x86_64                                                                                               16/16 
+
+Installed:
+  gqrx.x86_64 2.6.1-4.fc26                             PyQwt.x86_64 5.2.0-35.fc26                             freeglut.x86_64 3.0.0-4.fc26            
+  gnuradio.x86_64 3.7.11-1.fc26                        gr-fcdproplus.x86_64 0-0.27.20140920git1edbe523.fc26   gr-iqbal.x86_64 0.37.2-24.fc26          
+  gr-osmosdr.x86_64 0.1.4-2.20170221git2a2236cc.fc26   hackrf.x86_64 2015.07.2-3.fc26                         hidapi.x86_64 0.8.0-0.3.d17db57.fc26    
+  python-beautifulsoup4.noarch 4.6.0-1.fc26            python-cheetah.x86_64 2.4.4-14.fc26                    python2-cssselect.noarch 0.9.2-4.fc26   
+  python2-html5lib.noarch 1:0.999-13.fc26              python2-lxml.x86_64 3.7.2-2.fc26                       python2-pyopengl.x86_64 3.1.1a1-7.fc26  
+  qwt5-qt4.x86_64 5.2.2-30.fc26                       
+
+Complete!
+

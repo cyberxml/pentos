@@ -1,3 +1,5 @@
+# dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+# dnf install vlc
 yum -y install cmake
 # the following adds 750MB, figure out how to trim it
 yum -y install qt5-* 
@@ -6,8 +8,12 @@ yum -y install qt5-qtsvg qt5-qtsvg-devel
 yum -y install pulseaudio-*
 yum -y install gpredict
 yum -y install audacity
-yum -y install vlc
 yum -y install pandoc
+
+# dnf -y install pavucontrol
+#> dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+#> dnf install vlc
+#> dnf install python-vlc npapi-vlc (optionals)
 
 
 # --------------------------
@@ -215,7 +221,7 @@ ln -s /usr/lib64/mysql/libmysqlclient.so /usr/lib64/libmysqlclient.so
 cd /opt/pentos/apps
 git clone https://github.com/covertcodes/freqwatch
 cd freqwatch
-python setup.py make
+python setup.py build
 python setup.py install
 # will need to do some mysql configuration
 
