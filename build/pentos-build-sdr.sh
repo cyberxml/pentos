@@ -70,6 +70,30 @@ make
 make install
 ldconfig
 
+
+# --------------------------
+# install libosmocore and libosmogsm
+# --------------------------
+dnf -y install libtalloc libtalloc-devel
+dnf -y install pcsc-lite-libs pcsc-lite-devel
+git clone https://github.com/osmocom/libosmocore
+cd libossmocore
+libtoolize
+aclocal
+autoheader
+automake --add-missing
+autoreconf
+
+# --------------------------
+# install gr_gsm
+# --------------------------
+git clone https://github.com/ptrkrysik/gr-gsm
+cd gr-gsm
+mkdir build
+cd build
+cmake ..
+make
+
 # --------------------------
 # install osmo-sdr
 # --------------------------
@@ -177,6 +201,7 @@ ln -s /bin/aclocal /usr/bin/aclocal-1.15
 yum -y install lapack lapack-devel
 yum -y install armadillo armadillo-devel
 yum -y install python-mako
+#yum -y install glog gflags
 cd /opt/pentos/apps
 git clone https://github.com/gnss-sdr/gnss-sdr
 cd gnss-sdr

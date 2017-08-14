@@ -31,3 +31,50 @@ cd binwalk-2.1.1
 python setup.py install
 
 
+#------------------------
+# corkscrew: ssh over http
+#------------------------
+cd /opt/pentos/apps
+git clone https://github.com/elia/corkscrew
+cd corkscrew
+
+#------------------------
+# uncork: ssh over https
+#------------------------
+cd /opt/pentos/apps
+git clone https://github.com/compulim/uncork
+cd uncork
+npm install uncork -g
+
+#------------------------
+# icmptunnel: tcp over icmp
+#------------------------
+cd /opt/pentos/apps
+
+#------------------------
+# iodine: tcp over dns
+#------------------------
+cd /opt/pentos/apps
+
+#------------------------
+# empire: python and powershell
+#------------------------
+cd /opt/pentos/apps
+git clone https://github.com/EmpireProject/Empire
+cd empire
+./setup/install.sh
+
+#------------------------
+# crackmapexec:
+#------------------------
+cd /opt/pentos/apps
+git clone https://github.com/byt3bl33d3r/CrackMapExec
+cd empire
+./setup/install.sh
+
+#------------------------
+# egressbuster
+#------------------------
+cd /opt/pentos/apps
+git clone https://github.com/trustedsec/egressbuster
+cd egressbuster

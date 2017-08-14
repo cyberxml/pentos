@@ -20,9 +20,16 @@ pip install --trusted-host pypi.python.org harvester
 pip install --trusted-host pypi.python.org scrapy
 pip install --trusted-host pypi.python.org sslyze
 pip install --trusted-host pypi.python.org olefile
+pip install --trusted-host pypi.python.org crackmapexec
+pip install --trusted-host pypi.python.org cx_Oracle --pre
+pip install --trusted-host pypi.python.org passlib
+# for grabber
+pip install --trusted-host pypi.python.org BeautifulSoup
 
 # directory structure with multiple hooks
 # need to test; nmap is failing
 #pip install jarvis-pentest
 #pip install jarvis
 
+# node js? module
+npm install -g ssh2
