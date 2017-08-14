@@ -2,6 +2,13 @@
 # make pentos repo and rpms
 #----------------------------------
 
+# fedora
+# https://fedoraproject.org/wiki/How_to_create_an_RPM_package
+# dnf install fedora-packager fedora-review
+# usermod -a -G mock penne
+# fedora-packager-setup
+
+
 mkdir /opt/pentos/rpmbuild/BUILD
 mkdir /opt/pentos/rpmbuild/BUILDROOT
 mkdir /opt/pentos/rpmbuild/RPMS

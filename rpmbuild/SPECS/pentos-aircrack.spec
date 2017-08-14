@@ -35,22 +35,23 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/aircrack-ng"
 [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 
 %files
+/usr/local/pentos/apps/aircrack-ng/bin/airbase-ng
 /usr/local/pentos/apps/aircrack-ng/bin/aircrack-ng
 /usr/local/pentos/apps/aircrack-ng/bin/airdecap-ng
 /usr/local/pentos/apps/aircrack-ng/bin/airdecloak-ng
+/usr/local/pentos/apps/aircrack-ng/bin/airmon-ng
 /usr/local/pentos/apps/aircrack-ng/bin/airodump-ng
 /usr/local/pentos/apps/aircrack-ng/bin/airodump-ng-oui-update
+/usr/local/pentos/apps/aircrack-ng/bin/aireplay-ng
+/usr/local/pentos/apps/aircrack-ng/bin/airserv-ng
+/usr/local/pentos/apps/aircrack-ng/bin/airtun-ng
+/usr/local/pentos/apps/aircrack-ng/bin/airventriloquist-ng
 /usr/local/pentos/apps/aircrack-ng/bin/besside-ng-crawler
 /usr/local/pentos/apps/aircrack-ng/bin/ivstools
 /usr/local/pentos/apps/aircrack-ng/bin/kstats
 /usr/local/pentos/apps/aircrack-ng/bin/makeivs-ng
 /usr/local/pentos/apps/aircrack-ng/bin/packetforge-ng
 /usr/local/pentos/apps/aircrack-ng/bin/wpaclean
-/usr/local/pentos/apps/aircrack-ng/bin/airmon-ng
-/usr/local/pentos/apps/aircrack-ng/bin/airbase-ng
-/usr/local/pentos/apps/aircrack-ng/bin/aireplay-ng
-/usr/local/pentos/apps/aircrack-ng/bin/airserv-ng
-/usr/local/pentos/apps/aircrack-ng/bin/airtun-ng
 /usr/local/pentos/apps/aircrack-ng/man/airbase-ng.8
 /usr/local/pentos/apps/aircrack-ng/man/aircrack-ng.1
 /usr/local/pentos/apps/aircrack-ng/man/airdecap-ng.1
@@ -62,6 +63,7 @@ cp -R * "$RPM_BUILD_ROOT/usr/local/pentos/apps/aircrack-ng"
 /usr/local/pentos/apps/aircrack-ng/man/airolib-ng.1
 /usr/local/pentos/apps/aircrack-ng/man/airserv-ng.8
 /usr/local/pentos/apps/aircrack-ng/man/airtun-ng.8
+/usr/local/pentos/apps/aircrack-ng/man/airventriloquist.8
 /usr/local/pentos/apps/aircrack-ng/man/besside-ng.8
 /usr/local/pentos/apps/aircrack-ng/man/besside-ng-crawler.1
 /usr/local/pentos/apps/aircrack-ng/man/buddy-ng.1
