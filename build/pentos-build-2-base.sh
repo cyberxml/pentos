@@ -61,6 +61,7 @@ yum -y install qt-devel
 yum -y install qwt
 yum -y install qwt-devel
 yum -y install rdesktop
+yum -y install rfkill
 yum -y install rpmdevtools
 yum -y install rsh
 yum -y install ruby
