@@ -15,8 +15,6 @@ yum -y install ftp
 yum -y install gimp
 yum -y install graphviz
 yum -y install irssi
-yum -y install jack-audio-connection-kit
-yum -y install jack-audio-connection-kit-devel
 yum -y install libsmi
 yum -y install libssh-devel
 yum -y install lynx
@@ -49,8 +47,6 @@ yum -y install php-pgsql
 yum -y install php-snmp
 yum -y install php-soap
 yum -y install php-xmlrpc
-yum -y install portaudio
-yum -y install portaudio-devel
 yum -y install postgresql-server
 yum -y install proxychains-ng
 yum -y install python-linux-procfs
@@ -58,15 +54,13 @@ yum -y install python-matplotlib
 yum -y install python-pillow
 yum -y install python-tornado
 yum -y install qt-devel
-yum -y install qwt
-yum -y install qwt-devel
-yum -y install rdesktop
+#yum -y install rdesktop
 yum -y install rfkill
 yum -y install rpmdevtools
 yum -y install rsh
 yum -y install ruby
 yum -y install scap-workbench
-yum -y install scapy
+#yum -y install scapy
 yum -y install scipy
 yum -y install swig
 yum -y install telnet
@@ -83,11 +77,9 @@ yum -y install tix
 yum -y install tkinter
 yum -y install tokyocabinet
 yum -y install urlview
-yum -y install webkitgtk
 yum -y install wireshark
 yum -y install wireshark-gnome
 yum -y install whois
-yum -y install wxPython wxPython-devel
 yum -y install xulrunner
 
 

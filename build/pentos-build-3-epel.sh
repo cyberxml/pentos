@@ -1,8 +1,13 @@
 #-- EPEL --
 
-#REL=$(wget -O- http://dl.fedoraproject.org/pub/epel/7/x86_64/e/ 2>/dev/null | grep -Po 'epel-release-7-.*?noarch.rpm')
-#wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/${REL} 
-#rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/${REL}
+ret=$(cat /etc/redhat-release | grep CentOS)
+if (( $? < 1 )); then
+    yum install epel-release
+else
+    REL=$(wget -O- http://dl.fedoraproject.org/pub/epel/7/x86_64/e/ 2>/dev/null | grep -Po 'epel-release-7-.*?noarch.rpm')
+    wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/${REL} 
+    rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/${REL}
+fi
 yum -y update
 
 yum -y install python-pip
@@ -43,7 +48,7 @@ yum -y install dnsmap
 yum -y install lynis
 
 yum -y install reaver
-yum -y install rtl-sdr
+#yum -y install rtl-sdr
 
 yum -y install thc-ipv6
 
@@ -58,3 +63,10 @@ yum -y install hydra
 yum -y install hydra-frontend
 
 #yum -y install sc
+
+yum -y install jack-audio-connection-kit jack-audio-connection-kit-devel
+yum -y install portaudio portaudio-devel
+yum -y install qwt qwt-devel
+yum -y install scapy
+yum -y install webkitgtk
+yum -y install wxPython wxPython-devel
