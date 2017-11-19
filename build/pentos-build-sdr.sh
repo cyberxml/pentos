@@ -74,25 +74,25 @@ ldconfig
 # --------------------------
 # install libosmocore and libosmogsm
 # --------------------------
+#   Tell CMake where to find the compiler by setting either the environment
+#  variable "CXX" or the CMake cache entry CMAKE_CXX_COMPILER to the full path
+#  to the compiler, or to the compiler name if it is in the PATH.
+cd /opt/pentos/apps
+
 dnf -y install libtalloc libtalloc-devel
 dnf -y install pcsc-lite-libs pcsc-lite-devel
+dnf -y install gnutls-devel
+dnf -y install bumpversion
 git clone https://github.com/osmocom/libosmocore
-cd libossmocore
+cd libosmocore
 libtoolize
 aclocal
 autoheader
 automake --add-missing
 autoreconf
-
-# --------------------------
-# install gr_gsm
-# --------------------------
-git clone https://github.com/ptrkrysik/gr-gsm
-cd gr-gsm
-mkdir build
-cd build
-cmake ..
+./configure
 make
+make install
 
 # --------------------------
 # install osmo-sdr
@@ -126,14 +126,27 @@ yum -y install uhd uhd-devel
 yum -y install zeromq zeromq-devel python-zmq
 
 wget https://gnuradio.org/releases/gnuradio/gnuradio-3.7.11.tar.gz
-tar xvzf gnuradio-3.7.11
+tar xzf gnuradio-3.7.11.tar.gz
 cd gnuradio-3.7.11
 mkdir build
 cd build
 cmake ../
 make
 make install
+echo /usr/local/lib64 >> /etc/ld.so.conf.d/usr_local-x86-64.conf
 ldconfig
+
+# --------------------------
+# install gr_gsm
+# --------------------------
+cd /opt/pentos/apps
+git clone https://github.com/ptrkrysik/gr-gsm
+cd gr-gsm
+mkdir build
+cd build
+cmake ..
+make
+make install
 
 # --------------------------
 # install gr-osmosdr
@@ -217,10 +230,8 @@ yum -y install motif-devel
 cd /opt/pentos/apps
 git clone https://github.com/Xastir/Xastir
 cd Xastir
-./bootstraph.sh
-mkdir build
-cd build
-../configure
+./bootstrap.sh
+./configure
 make
 make install
 
