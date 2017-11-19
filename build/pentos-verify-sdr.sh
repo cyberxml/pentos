@@ -177,4 +177,37 @@ else
     echo "[F] freqwatch"
 fi
 
+# -------------------------------------------------
+# sdrtrunk
+# -------------------------------------------------
+/opt/pentos/apps/sdrtrunk/product/sdrtrunk/run_sdrtrunk_linux.sh  > /dev/null 2>&1
+result=$?
+if [ $result -eq 1 ]; then
+    echo "[P] sdrtrunk"
+else
+    echo "[F] sdrtrunk"
+fi
+
+# -------------------------------------------------
+# minimodem
+# -------------------------------------------------
+minimodem  > /dev/null 2>&1
+result=$?
+if [ $result -eq 1 ]; then
+    echo "[P] minimodem"
+else
+    echo "[F] minimodem"
+fi
+
+# -------------------------------------------------
+# rtl_433
+# -------------------------------------------------
+rtl_433  > /dev/null 2>&1
+result=$?
+if [ $result -eq 1 ]; then
+    echo "[P] rtl_433"
+else
+    echo "[F] rtl_433"
+fi
+
 

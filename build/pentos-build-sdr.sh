@@ -279,7 +279,7 @@ make
 cd /opt/pentos/apps
 yum -y install ant
 # http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-yum localinstall jdk-8u131-linux-x64.rpm
+#yum localinstall jdk-8u131-linux-x64.rpm
 # run alternatives to set java and javac to oracle
 # alternatives --config java
 # alternatives --config javac
@@ -288,7 +288,7 @@ cd sdrtrunk
 cd build
 ant
 cd ../product
-tar xvzf sdrtrunk_0.3.0-beta13.tgz
+tar xzf sdrtrunk_0.3.1.tgz
 cd sdrtrunk
 # to test
 # ./run_sdrtrunk_linux.sh
