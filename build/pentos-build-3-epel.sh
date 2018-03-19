@@ -2,7 +2,7 @@
 
 ret=$(cat /etc/redhat-release | grep CentOS)
 if (( $? < 1 )); then
-    yum install epel-release
+    yum -y install epel-release
 else
     REL=$(wget -O- http://dl.fedoraproject.org/pub/epel/7/x86_64/e/ 2>/dev/null | grep -Po 'epel-release-7-.*?noarch.rpm')
     wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/${REL} 
@@ -70,3 +70,8 @@ yum -y install qwt qwt-devel
 yum -y install scapy
 yum -y install webkitgtk
 yum -y install wxPython wxPython-devel
+
+yum -y install npm
+
+yum -y install clang
+
