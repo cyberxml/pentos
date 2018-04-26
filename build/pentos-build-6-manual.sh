@@ -1,10 +1,10 @@
 # for rpm environment?
-mkdir /opt/pentos/apps
-mkdir /opt/pentos/apps/Perl-Net-RawIP
-cd /opt/pentos/apps/Perl-Net-RaqIP
-wget http://grotte2.intello.com/repository/intello/centos/7/stable/x86_64/packages/perl-Net-RawIP-0.25-1.el7.centos.x86_64.rpm
-rpm -i perl-Net-RawIP-0.25-1.el7.centos.x86_64.rpm
-cd /opt/pentos/build
+#mkdir /opt/pentos/apps
+#mkdir /opt/pentos/apps/Perl-Net-RawIP
+#cd /opt/pentos/apps/Perl-Net-RaqIP
+#wget http://grotte2.intello.com/repository/intello/centos/7/stable/x86_64/packages/perl-Net-RawIP-0.25-1.el7.centos.x86_64.rpm
+#rpm -i perl-Net-RawIP-0.25-1.el7.centos.x86_64.rpm
+#cd /opt/pentos/build
 
 #------------------------
 # manual installs
@@ -78,3 +78,12 @@ cd empire
 cd /opt/pentos/apps
 git clone https://github.com/trustedsec/egressbuster
 cd egressbuster
+
+# dirb
+# https://downloads.sourceforge.net/project/dirb/dirb/2.22/dirb222.tar.gz?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdirb%2Ffiles%2Fdirb%2F2.22%2Fdirb222.tar.gz%2Fdownload&ts=1524696129
+
+# gobuster
+# git clone https://github.com/OJ/gobuster
+
+# rockyou
+# http://downloads.skullsecurity.org/passwords/rockyou.txt.bz2

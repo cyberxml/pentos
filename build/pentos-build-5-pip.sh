@@ -5,8 +5,8 @@ pip install --upgrade setuptools
 #pip3 install --upgrade setuptools
 
 # something wrong with pip compile environment
-cp /usr/lib/python2.7/site-packages/packaging/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py-orig
-cp /opt/pentos/build/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py
+#cp /usr/lib/python2.7/site-packages/packaging/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py-orig
+#cp /opt/pentos/build/requirements.py /usr/lib/python2.7/site-packages/packaging/requirements.py
 
 # pypi binwalk is outdated
 #pip install --trusted-host pypi.python.org binwalk
@@ -31,5 +31,7 @@ pip install --trusted-host pypi.python.org BeautifulSoup
 #pip install jarvis-pentest
 #pip install jarvis
 
+
+# not pip/python
 # node js? module
 npm install -g ssh2
